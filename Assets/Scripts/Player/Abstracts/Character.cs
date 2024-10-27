@@ -1,26 +1,41 @@
 using System;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
+public abstract class Character : MonoBehaviour {
     public Rigidbody2D rb;
     public float groundSpeed, jumpSpeed, acceleration;
-    [Range (0f, 1f)]
+    [Range(0f, 1f)]
     public float groundDecay;
     public bool grounded;
     public BoxCollider2D groundCheck;
     public LayerMask groundMask;
     public Animator animator;
 
-    float xInput;
-    float yInput;
-    bool jumpInput;
+    public float health = 100f;
+    private int lives = 2;
+    private bool isAttacking;
+
+    protected float xInput;
+    protected bool jumpInput;
+    
     void Start() {
     }
 
     void Update() {
-        GetInput();
+        GetMovementInput();
         HandleJump();
         UpdateAnimations();
+        HandleAttack();
+    }
+
+    protected abstract void GetMovementInput();
+    protected virtual void MoveWithInput() {}
+    protected abstract KeyCode GetAttackKey();
+
+    private void HandleAttack() {
+        if (Input.GetKeyDown(GetAttackKey())) {
+            isAttacking = true;
+        }
     }
 
     private void UpdateAnimations() {
@@ -31,36 +46,14 @@ public class PlayerMovement : MonoBehaviour {
 
         bool isFalling = !grounded && rb.velocity.y <= 0;
         animator.SetBool("IsFalling", isFalling);
+
+        animator.SetBool("IsAttacking", isAttacking);
     }
 
-    private void MoveWithInput() {
-        if (Mathf.Abs(xInput) > 0) {
-            float increment = xInput * acceleration;
-            float newSpeed = Mathf.Clamp(rb.velocity.x + increment, -groundSpeed, groundSpeed);
-            rb.velocity = new Vector2(newSpeed, rb.velocity.y);
-
-            Vector3 currentScale = transform.localScale;
-            float direction = Mathf.Sign(xInput);
-            transform.localScale = new Vector3(direction * Mathf.Abs(currentScale.x), currentScale.y, currentScale.z);
-        }
-    }
-
-    private void HandleJump()
-    {
+    private void HandleJump() {
         if (jumpInput && grounded) {
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
         }
-    }
-
-    private void GetInput() {
-        if(Input.GetKey(KeyCode.A)) {
-            xInput = -1f;
-        } else if (Input.GetKey(KeyCode.D)) {
-            xInput = 1f;
-        } else {
-            xInput = 0f;
-        }
-        jumpInput = Input.GetKey(KeyCode.W);
     }
 
     void FixedUpdate() {
@@ -70,12 +63,26 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     private void ApplyFriction() {
-        if(grounded && xInput == 0 && rb.velocity.y <= 0) {
+        if (grounded && xInput == 0 && rb.velocity.y <= 0) {
             rb.velocity *= groundDecay;
         }
     }
 
     private void CheckGround() {
         grounded = Physics2D.OverlapAreaAll(groundCheck.bounds.min, groundCheck.bounds.max, groundMask).Length > 0;
+    }
+
+    public void TakeDamage(float damage) {
+        health -= damage;
+        if (health <= 0) {
+            lives -= 1;
+            if (lives == 0) {
+                Die();
+            }
+        }
+    }
+
+    private void Die() {
+        Debug.Log("Character has died.");
     }
 }
