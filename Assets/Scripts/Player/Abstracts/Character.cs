@@ -13,8 +13,14 @@ public abstract class Character : MonoBehaviour {
 
     public float health = 100f;
     private int lives = 2;
-    private bool isAttacking;
 
+    private int attackCounter = 0;
+    private float lastAttackTime = 0f;
+    private float lastNormalAttackTime = 0f;
+    private const float normalAttackCooldown = 0.5f;
+    private const float maxComboDelay = 1.0f;
+    private const float heavyAttackCooldown = 10.0f;
+    private float lastHeavyAttackTime = 5.0f;
     protected float xInput;
     protected bool jumpInput;
     
@@ -33,9 +39,41 @@ public abstract class Character : MonoBehaviour {
     protected abstract KeyCode GetAttackKey();
 
     private void HandleAttack() {
-        if (Input.GetKeyDown(GetAttackKey())) {
-            isAttacking = true;
+    float currentTime = Time.time;
+
+    if (Input.GetKeyDown(GetAttackKey())) {
+        if (attackCounter >= 3) {
+            if (currentTime - lastHeavyAttackTime >= heavyAttackCooldown) {
+                TriggerHeavyAttack();
+                lastHeavyAttackTime = currentTime;
+                attackCounter = 0;
+            } else {
+                Debug.Log("Heavy attack is on cooldown.");
+            }
+        } else {
+            if (currentTime - lastNormalAttackTime >= normalAttackCooldown) {
+                if (currentTime - lastAttackTime <= maxComboDelay) {
+                    attackCounter++;
+                } else {
+                    attackCounter = 1;
+                }
+                lastAttackTime = currentTime;
+                lastNormalAttackTime = currentTime;
+                TriggerAttack();
+            } else {
+                Debug.Log("Normal attack is on cooldown.");
+            }
         }
+    }
+}
+
+
+    private void TriggerAttack() {
+        animator.SetBool("IsAttacking", true);
+    }
+
+    private void TriggerHeavyAttack() {
+        animator.SetBool("IsHeavyAttack", true);
     }
 
     private void UpdateAnimations() {
@@ -47,7 +85,11 @@ public abstract class Character : MonoBehaviour {
         bool isFalling = !grounded && rb.velocity.y <= 0;
         animator.SetBool("IsFalling", isFalling);
 
-        animator.SetBool("IsAttacking", isAttacking);
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Attack1") || animator.GetCurrentAnimatorStateInfo(0).IsName("Attack2")) {
+            if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f) {
+                animator.SetBool("IsAttacking", false);
+            }
+        }
     }
 
     private void HandleJump() {
@@ -85,4 +127,12 @@ public abstract class Character : MonoBehaviour {
     private void Die() {
         Debug.Log("Character has died.");
     }
+
+    public void ResetAttack() {
+        animator.SetBool("IsAttacking", false);
+    }
+    public void ResetHeavyAttack() {
+        animator.SetBool("IsHeavyAttack", false);
+    }
+
 }
