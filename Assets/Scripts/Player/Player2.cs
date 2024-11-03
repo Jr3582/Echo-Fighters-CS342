@@ -1,6 +1,28 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player2 : Player {
+    private Player1 player1;
+    public CircleCollider2D attackCollider;
+    protected new int heavyAttackDamage = 12;
+    protected new int normalAttackDamage = 8;
+    protected new float normalAttackCooldown = 1.50f;
+    protected new float heavyAttackCooldown = 20.0f;
+    protected new int maxHealth = 125;
+    protected new int currentHealth = 125;
+    [SerializeField]
+    private AttackCoolDownUI player2AttackCoolDownUI;
+    public Image player2HealthBar;
+    protected override void Start() {
+        base.Start();
+        player2AttackCoolDownUI.StartHeavyAttackCooldown();
+        player1 = FindObjectOfType<Player1>();
+        maxHealth = currentHealth;
+    }
+    protected override void Update() {
+        base.Update();
+        HandleAttack();
+    }
 
     protected override float GetHorizontalInput() {
         if (Input.GetKey(KeyCode.LeftArrow)) return -1f;
@@ -23,7 +45,70 @@ public class Player2 : Player {
             transform.localScale = new Vector3(-direction * Mathf.Abs(currentScale.x), currentScale.y, currentScale.z);
         }
     }
+
+    private void HandleAttack() {
+        float currentTime = Time.time;
+
+        if (Input.GetKeyDown(GetAttackKey())) {
+            if (currentTime - lastNormalAttackTime >= normalAttackCooldown) {
+                TriggerAttack();
+                lastNormalAttackTime = currentTime;
+                CheckForDamage(normalAttackDamage);
+            } else {
+                Debug.Log("Normal attack is on cooldown.");
+            }
+        } else if (Input.GetKeyDown(GetHeavyAttackKey())) {
+            if (currentTime - lastHeavyAttackTime >= heavyAttackCooldown) {
+                TriggerHeavyAttack();
+                lastHeavyAttackTime = currentTime;
+                CheckForDamage(heavyAttackDamage);
+                player2AttackCoolDownUI.StartHeavyAttackCooldown();
+            } else {
+                Debug.Log("Heavy attack is on cooldown.");
+            }
+        }
+    }
+
+        private void CheckForDamage(int damage) {
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(attackCollider.bounds.center, attackCollider.radius);
+        foreach (var hitCollider in hitColliders) {
+            if (hitCollider.CompareTag("Player1")) {
+                Player1 player1 = hitCollider.GetComponentInParent<Player1>();
+                if (player1 != null) {
+                    player1.TakeDamage(damage);
+                }
+            }
+        }
+    }
+    public override void TakeDamage(int damage) {
+        currentHealth -= damage;
+        float healthPercentage = (float)currentHealth / maxHealth;
+        player2HealthBar.fillAmount = healthPercentage;
+        Debug.Log("Damage taken: " + damage);
+        if (currentHealth <= 0) {
+            Die();
+        }
+    }
+
     protected override KeyCode GetAttackKey() {
-        return KeyCode.K;
+        return KeyCode.B;
+    }
+    protected override KeyCode GetHeavyAttackKey() {
+        return KeyCode.M;
+    }
+    private void TriggerAttack() {
+        animator.SetBool("IsAttacking", true);
+    }
+
+    private void TriggerHeavyAttack() {
+        animator.SetBool("IsHeavyAttack", true);
+    }
+
+    public void ResetAttack() {
+        animator.SetBool("IsAttacking", false);
+    }
+
+    public void ResetHeavyAttack() {
+        animator.SetBool("IsHeavyAttack", false);
     }
 }
