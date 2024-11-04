@@ -38,8 +38,6 @@ public class Player1 : Player {
                 TriggerAttack();
                 lastNormalAttackTime = currentTime;
                 CheckForDamage(normalAttackDamage);
-            } else {
-                Debug.Log("Normal attack is on cooldown.");
             }
         } else if (Input.GetKeyDown(GetHeavyAttackKey())) {
             if (currentTime - lastHeavyAttackTime >= heavyAttackCooldown) {
@@ -47,8 +45,6 @@ public class Player1 : Player {
                 lastHeavyAttackTime = currentTime;
                 CheckForDamage(heavyAttackDamage);
                 player1AttackCoolDownUI.StartHeavyAttackCooldown();
-            } else {
-                Debug.Log("Heavy attack is on cooldown.");
             }
         }
     }
@@ -67,6 +63,7 @@ public class Player1 : Player {
         currentHealth -= damage;
         float healthPercentage = (float)currentHealth / maxHealth;
         player1HealthBar.fillAmount = healthPercentage;
+        HasBeenHit();
         if (currentHealth <= 0) {
             Die();
         }
@@ -88,6 +85,10 @@ public class Player1 : Player {
 
     private void TriggerHeavyAttack() {
         animator.SetBool("IsHeavyAttack", true);
+    }
+
+    private void HasBeenHit() {
+        animator.SetTrigger("IsHit");
     }
 
     public void ResetAttack() {

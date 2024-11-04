@@ -40,6 +40,10 @@ public class Player2 : Player {
             float newSpeed = Mathf.Clamp(rb.velocity.x + increment, -groundSpeed, groundSpeed);
             rb.velocity = new Vector2(newSpeed, rb.velocity.y);
 
+            Vector3 newPosition = transform.position + new Vector3(newSpeed * Time.deltaTime, 0, 0);
+            newPosition.x = Mathf.Clamp(newPosition.x, minX, maxX); // Clamp position
+            transform.position = newPosition;
+
             Vector3 currentScale = transform.localScale;
             float direction = Mathf.Sign(xInput);
             transform.localScale = new Vector3(-direction * Mathf.Abs(currentScale.x), currentScale.y, currentScale.z);
@@ -69,7 +73,7 @@ public class Player2 : Player {
         }
     }
 
-        private void CheckForDamage(int damage) {
+    private void CheckForDamage(int damage) {
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(attackCollider.bounds.center, attackCollider.radius);
         foreach (var hitCollider in hitColliders) {
             if (hitCollider.CompareTag("Player1")) {
@@ -84,7 +88,7 @@ public class Player2 : Player {
         currentHealth -= damage;
         float healthPercentage = (float)currentHealth / maxHealth;
         player2HealthBar.fillAmount = healthPercentage;
-        Debug.Log("Damage taken: " + damage);
+        HasBeenHit();
         if (currentHealth <= 0) {
             Die();
         }
@@ -103,6 +107,9 @@ public class Player2 : Player {
     private void TriggerHeavyAttack() {
         animator.SetBool("IsHeavyAttack", true);
     }
+    private void HasBeenHit() {
+        animator.SetTrigger("IsHit");
+    }
 
     public void ResetAttack() {
         animator.SetBool("IsAttacking", false);
@@ -110,5 +117,8 @@ public class Player2 : Player {
 
     public void ResetHeavyAttack() {
         animator.SetBool("IsHeavyAttack", false);
+    }
+    public void ResetToIdle() {
+        animator.Play("Idle");
     }
 }

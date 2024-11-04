@@ -13,7 +13,7 @@ public abstract class Character : MonoBehaviour {
     protected float xInput;
 
     protected virtual void Start() {
-        //filler
+        //Abstract
     }
 
     protected virtual void Update() {

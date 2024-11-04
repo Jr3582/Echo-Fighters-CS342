@@ -18,6 +18,9 @@ public abstract class Player : Character {
     public float jumpSpeed, groundSpeed, acceleration;
     protected bool jumpInput;
 
+    protected float minX = -11f;
+    protected float maxX = 11f;
+
     protected float lastNormalAttackTime = 0f;
     protected float lastHeavyAttackTime = 0f;
     public int lives = 2;
@@ -32,16 +35,15 @@ public abstract class Player : Character {
         }
     }
 
-    protected override void GetMovementInput() {
-        xInput = GetHorizontalInput();
-        jumpInput = GetJumpInput();
-    }
-
     protected override void MoveWithInput() {
         if (Mathf.Abs(xInput) > 0) {
             float increment = xInput * acceleration;
             float newSpeed = Mathf.Clamp(rb.velocity.x + increment, -groundSpeed, groundSpeed);
             rb.velocity = new Vector2(newSpeed, rb.velocity.y);
+
+            Vector3 newPosition = transform.position + new Vector3(newSpeed * Time.deltaTime, 0, 0);
+            newPosition.x = Mathf.Clamp(newPosition.x, minX, maxX); // Clamp position
+            transform.position = newPosition;
 
             Vector3 currentScale = transform.localScale;
             float direction = Mathf.Sign(xInput);
@@ -57,6 +59,10 @@ public abstract class Player : Character {
         Debug.Log("Player has died.");
     }
 
+    protected override void GetMovementInput() {
+        xInput = GetHorizontalInput();
+        jumpInput = GetJumpInput();
+    }
     protected abstract float GetHorizontalInput();
     protected abstract bool GetJumpInput();
     protected abstract KeyCode GetAttackKey();
