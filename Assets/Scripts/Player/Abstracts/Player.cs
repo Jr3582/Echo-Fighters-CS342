@@ -18,8 +18,8 @@ public abstract class Player : Character {
     public float jumpSpeed, groundSpeed, acceleration;
     protected bool jumpInput;
 
-    protected float minX = -11f;
-    protected float maxX = 11f;
+    protected float minX = -12.5f;
+    protected float maxX = 12.5f;
 
     protected float lastNormalAttackTime = 0f;
     protected float lastHeavyAttackTime = 0f;

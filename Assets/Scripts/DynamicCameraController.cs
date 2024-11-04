@@ -8,6 +8,7 @@ public class DynamicCameraController : MonoBehaviour {
     [SerializeField] private float maxZoom = 10f;
     [SerializeField] private float zoomFactor = 1f;
     [SerializeField] private float leftZoomFactor = 0.5f;
+    [SerializeField] private float rightZoomFactor = 0.5f;
     [SerializeField] private float smoothSpeed = 0.125f;
 
     public float minX = -10f;
@@ -34,12 +35,23 @@ public class DynamicCameraController : MonoBehaviour {
         float distance = Vector3.Distance(player1.position, player2.position);
         float desiredZoom = Mathf.Clamp(minZoom + (distance * zoomFactor), minZoom, maxZoom);
 
-        if (player1.position.x < minX) {
-            float leftZoomAdjustment = Mathf.Abs(player1.position.x - minX) * leftZoomFactor;
+        if (player1.position.x < minX + 1f || player2.position.x < minX + 1f) {
+            float leftZoomAdjustment = Mathf.Max(
+                Mathf.Abs(player1.position.x - minX),
+                Mathf.Abs(player2.position.x - minX)
+            ) * leftZoomFactor;
             desiredZoom += leftZoomAdjustment;
         }
+        
+        if (player1.position.x > maxX - 1f || player2.position.x > maxX - 1f) {
+            float rightZoomAdjustment = Mathf.Max(
+                Mathf.Abs(player1.position.x - maxX),
+                Mathf.Abs(player2.position.x - maxX)
+            ) * rightZoomFactor;
+            desiredZoom += rightZoomAdjustment;
+        }
 
-        desiredZoom = Mathf.Min(desiredZoom, 6.5f);
+        desiredZoom = Mathf.Min(desiredZoom, 7f);
 
         if (cam.orthographic) {
             cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, desiredZoom, smoothSpeed);
