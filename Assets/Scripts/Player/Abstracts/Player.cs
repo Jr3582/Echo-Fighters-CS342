@@ -67,4 +67,5 @@ public abstract class Player : Character {
     protected abstract bool GetJumpInput();
     protected abstract KeyCode GetAttackKey();
     protected abstract KeyCode GetHeavyAttackKey();
+    protected abstract KeyCode GetBlockKey();
 }

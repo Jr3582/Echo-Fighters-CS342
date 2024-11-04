@@ -13,6 +13,7 @@ public class Player2 : Player {
     [SerializeField]
     private AttackCoolDownUI player2AttackCoolDownUI;
     public Image player2HealthBar;
+    private bool isBlocking = false;
     protected override void Start() {
         base.Start();
         player2AttackCoolDownUI.StartHeavyAttackCooldown();
@@ -22,6 +23,29 @@ public class Player2 : Player {
     protected override void Update() {
         base.Update();
         HandleAttack();
+        HandleBlock();
+    }
+
+    private void HandleBlock() {
+        if (Input.GetKey(GetBlockKey())) {
+            StartBlocking();
+        } else {
+            StopBlocking();
+        }
+    }
+        private void StopBlocking() {
+        if(isBlocking) {
+            isBlocking = false;
+            animator.SetBool("IsBlocking", false);
+        }
+    
+    }
+
+    private void StartBlocking() {
+        if(!isBlocking) {
+            isBlocking = true;
+            animator.SetBool("IsBlocking", true);
+        }
     }
 
     protected override float GetHorizontalInput() {
@@ -85,12 +109,20 @@ public class Player2 : Player {
         }
     }
     public override void TakeDamage(int damage) {
-        currentHealth -= damage;
-        float healthPercentage = (float)currentHealth / maxHealth;
-        player2HealthBar.fillAmount = healthPercentage;
-        HasBeenHit();
+                if (!isBlocking) {
+            currentHealth -= damage;
+            float healthPercentage = (float)currentHealth / maxHealth;
+            player2HealthBar.fillAmount = healthPercentage;
+            HasBeenHit();
+        } else if (isBlocking) {
+            currentHealth -= (int)(damage * 0.6);
+            float healthPercentage = (float)currentHealth / maxHealth;
+            player2HealthBar.fillAmount = healthPercentage;
+            HasBeenHit();
+        }
         if (currentHealth <= 0) {
             Die();
+            lives -= 1;
         }
     }
 
@@ -99,6 +131,9 @@ public class Player2 : Player {
     }
     protected override KeyCode GetHeavyAttackKey() {
         return KeyCode.M;
+    }
+        protected override KeyCode GetBlockKey() {
+        return KeyCode.N;
     }
     private void TriggerAttack() {
         animator.SetBool("IsAttacking", true);

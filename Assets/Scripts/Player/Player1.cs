@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,7 @@ public class Player1 : Player {
     [SerializeField]
     private AttackCoolDownUI player1AttackCoolDownUI;
     public Image player1HealthBar;
+    private bool isBlocking = false;
 
     protected override void Start() {
         base.Start();
@@ -22,6 +24,30 @@ public class Player1 : Player {
     protected override void Update() {
         base.Update();
         HandleAttack();
+        HandleBlock();
+    }
+
+    private void HandleBlock() {
+        if (Input.GetKey(GetBlockKey())) {
+            StartBlocking();
+        } else {
+            StopBlocking();
+        }
+    }
+
+    private void StopBlocking() {
+        if(isBlocking) {
+            isBlocking = false;
+            animator.SetBool("IsBlocking", false);
+        }
+    
+    }
+
+    private void StartBlocking() {
+        if(!isBlocking) {
+            isBlocking = true;
+            animator.SetBool("IsBlocking", true);
+        }
     }
 
     protected override float GetHorizontalInput() {
@@ -60,12 +86,20 @@ public class Player1 : Player {
         }
     }
     public override void TakeDamage(int damage) {
-        currentHealth -= damage;
-        float healthPercentage = (float)currentHealth / maxHealth;
-        player1HealthBar.fillAmount = healthPercentage;
-        HasBeenHit();
+        if (!isBlocking) {
+            currentHealth -= damage;
+            float healthPercentage = (float)currentHealth / maxHealth;
+            player1HealthBar.fillAmount = healthPercentage;
+            HasBeenHit();
+        } else if (isBlocking) {
+            currentHealth -= (int)(damage * 0.8);
+            float healthPercentage = (float)currentHealth / maxHealth;
+            player1HealthBar.fillAmount = healthPercentage;
+            HasBeenHit();
+        }
         if (currentHealth <= 0) {
             Die();
+            lives -= 1;
         }
     }
     protected override bool GetJumpInput() {
@@ -77,6 +111,9 @@ public class Player1 : Player {
     }
     protected override KeyCode GetHeavyAttackKey() {
         return KeyCode.H;
+    }
+    protected override KeyCode GetBlockKey() {
+        return KeyCode.G;
     }
 
     private void TriggerAttack() {
