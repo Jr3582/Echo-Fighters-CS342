@@ -784,7 +784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldownBar: {fileID: 405896948}
-  heavyAttackCooldown: 20
+  heavyAttackCooldown: 12.5
 --- !u!114 &219429175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1701,7 +1701,7 @@ Transform:
   m_GameObject: {fileID: 588438944}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.514, y: 0.044, z: 0}
+  m_LocalPosition: {x: 0.499, y: 0.126, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1741,7 +1741,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.1, y: 0}
   serializedVersion: 2
-  m_Radius: 0.35
+  m_Radius: 0.4
 --- !u!1 &636936040
 GameObject:
   m_ObjectHideFlags: 0
@@ -2761,7 +2761,7 @@ MonoBehaviour:
   lives: 2
   life1: {fileID: 1680001490}
   life2: {fileID: 1877390261}
-  deathAnimation: {fileID: 0}
+  deathAnimation: {fileID: 7400000, guid: 11293af6728bf47478a6ce10b68f68c8, type: 2}
   attackCollider: {fileID: 1245629444}
   player2AttackCoolDownUI: {fileID: 2135772738}
   player2HealthBar: {fileID: 1477790567}
@@ -5918,7 +5918,7 @@ GameObject:
   - component: {fileID: 1872106917}
   - component: {fileID: 1872106918}
   m_Layer: 0
-  m_Name: RoundControl
+  m_Name: RoundController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6213,11 +6213,11 @@ MonoBehaviour:
   player1: {fileID: 1652122393}
   player2: {fileID: 824987365}
   minZoom: 4
-  maxZoom: 8
+  maxZoom: 9
   smoothSpeed: 0.05
   zoomStartDistance: 12
-  minX: -6.5
-  maxX: 6.5
+  minX: -10
+  maxX: 10
 --- !u!114 &1900669711
 MonoBehaviour:
   m_ObjectHideFlags: 0

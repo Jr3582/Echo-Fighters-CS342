@@ -6,8 +6,8 @@ public class Player1 : Player {
     private Player2 player2;
     public CircleCollider2D attackCollider;
     protected new int heavyAttackDamage = 12;
-    protected new int normalAttackDamage = 200;
-    protected new float normalAttackCooldown  = 0.75f;
+    protected new int normalAttackDamage = 8;
+    protected new float normalAttackCooldown  = 0.50f;
     protected new float heavyAttackCooldown = 12.50f;
     [SerializeField] private AttackCoolDownUI player1AttackCoolDownUI;
     [SerializeField] public Image player1HealthBar;

@@ -4,8 +4,8 @@ using UnityEngine.UI;
 public class Player2 : Player {
     private Player1 player1;
     public CircleCollider2D attackCollider;
-    protected new int heavyAttackDamage = 12;
-    protected new int normalAttackDamage = 100;
+    protected new int heavyAttackDamage = 14;
+    protected new int normalAttackDamage = 10;
     protected new float normalAttackCooldown = 1.50f;
     protected new float heavyAttackCooldown = 20.0f;
     protected new int maxHealth = 125;

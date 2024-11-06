@@ -92,12 +92,12 @@ public abstract class Player : Character {
     private IEnumerator PauseAfterDeath() {
         Time.timeScale = 0;
         yield return new WaitForSecondsRealtime(5);
+        Time.timeScale = 1;
 
         Player[] players = FindObjectsOfType<Player>();
         foreach (Player player in players) {
             player.ResetForNewRound(player.startingPosition);
         }
-        Time.timeScale = 1;
         roundScript.StartNewRound();
         animator.speed = 1;
     }
