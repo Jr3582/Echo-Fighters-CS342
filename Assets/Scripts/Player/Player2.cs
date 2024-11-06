@@ -5,7 +5,7 @@ public class Player2 : Player {
     private Player1 player1;
     public CircleCollider2D attackCollider;
     protected new int heavyAttackDamage = 12;
-    protected new int normalAttackDamage = 8;
+    protected new int normalAttackDamage = 100;
     protected new float normalAttackCooldown = 1.50f;
     protected new float heavyAttackCooldown = 20.0f;
     protected new int maxHealth = 125;
@@ -14,6 +14,9 @@ public class Player2 : Player {
     private AttackCoolDownUI player2AttackCoolDownUI;
     public Image player2HealthBar;
     private bool isBlocking = false;
+
+    protected override Image HealthBar => player2HealthBar;
+
     protected override void Start() {
         base.Start();
         player2AttackCoolDownUI.StartHeavyAttackCooldown();
@@ -82,8 +85,6 @@ public class Player2 : Player {
                 TriggerAttack();
                 lastNormalAttackTime = currentTime;
                 CheckForDamage(normalAttackDamage);
-            } else {
-                Debug.Log("Normal attack is on cooldown.");
             }
         } else if (Input.GetKeyDown(GetHeavyAttackKey())) {
             if (currentTime - lastHeavyAttackTime >= heavyAttackCooldown) {
@@ -91,8 +92,6 @@ public class Player2 : Player {
                 lastHeavyAttackTime = currentTime;
                 CheckForDamage(heavyAttackDamage);
                 player2AttackCoolDownUI.StartHeavyAttackCooldown();
-            } else {
-                Debug.Log("Heavy attack is on cooldown.");
             }
         }
     }
@@ -109,7 +108,7 @@ public class Player2 : Player {
         }
     }
     public override void TakeDamage(int damage) {
-                if (!isBlocking) {
+        if (!isBlocking) {
             currentHealth -= damage;
             float healthPercentage = (float)currentHealth / maxHealth;
             player2HealthBar.fillAmount = healthPercentage;
@@ -121,8 +120,8 @@ public class Player2 : Player {
             HasBeenHit();
         }
         if (currentHealth <= 0) {
-            Die();
             lives -= 1;
+            Die();
         }
     }
 

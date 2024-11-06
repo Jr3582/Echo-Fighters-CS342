@@ -6,15 +6,14 @@ public class Player1 : Player {
     private Player2 player2;
     public CircleCollider2D attackCollider;
     protected new int heavyAttackDamage = 12;
-    protected new int normalAttackDamage = 8;
+    protected new int normalAttackDamage = 200;
     protected new float normalAttackCooldown  = 0.75f;
     protected new float heavyAttackCooldown = 12.50f;
-    
-    [SerializeField]
-    private AttackCoolDownUI player1AttackCoolDownUI;
-    public Image player1HealthBar;
+    [SerializeField] private AttackCoolDownUI player1AttackCoolDownUI;
+    [SerializeField] public Image player1HealthBar;
     private bool isBlocking = false;
 
+    protected override Image HealthBar => player1HealthBar;
     protected override void Start() {
         base.Start();
         player1AttackCoolDownUI.StartHeavyAttackCooldown();
@@ -98,8 +97,8 @@ public class Player1 : Player {
             HasBeenHit();
         }
         if (currentHealth <= 0) {
-            Die();
             lives -= 1;
+            Die();
         }
     }
     protected override bool GetJumpInput() {

@@ -5,11 +5,9 @@ public class DynamicCameraController : MonoBehaviour {
     public Transform player2;
 
     [SerializeField] private float minZoom = 4f;
-    [SerializeField] private float maxZoom = 10f;
-    [SerializeField] private float zoomFactor = 1f;
-    [SerializeField] private float leftZoomFactor = 0.5f;
-    [SerializeField] private float rightZoomFactor = 0.5f;
+    [SerializeField] private float maxZoom = 7f;
     [SerializeField] private float smoothSpeed = 0.125f;
+    [SerializeField] private float zoomStartDistance = 12f;
 
     public float minX = -10f;
     public float maxX = 10f;
@@ -32,26 +30,9 @@ public class DynamicCameraController : MonoBehaviour {
 
         transform.position = Vector3.Lerp(transform.position, newPosition, smoothSpeed);
 
-        float distance = Vector3.Distance(player1.position, player2.position);
-        float desiredZoom = Mathf.Clamp(minZoom + (distance * zoomFactor), minZoom, maxZoom);
-
-        if (player1.position.x < minX + 1f || player2.position.x < minX + 1f) {
-            float leftZoomAdjustment = Mathf.Max(
-                Mathf.Abs(player1.position.x - minX),
-                Mathf.Abs(player2.position.x - minX)
-            ) * leftZoomFactor;
-            desiredZoom += leftZoomAdjustment;
-        }
-        
-        if (player1.position.x > maxX - 1f || player2.position.x > maxX - 1f) {
-            float rightZoomAdjustment = Mathf.Max(
-                Mathf.Abs(player1.position.x - maxX),
-                Mathf.Abs(player2.position.x - maxX)
-            ) * rightZoomFactor;
-            desiredZoom += rightZoomAdjustment;
-        }
-
-        desiredZoom = Mathf.Min(desiredZoom, 7f);
+        float xDistance = Mathf.Abs(player1.position.x - player2.position.x);
+        float t = Mathf.InverseLerp(zoomStartDistance, zoomStartDistance * 2, xDistance);
+        float desiredZoom = Mathf.Lerp(minZoom, maxZoom, t);
 
         if (cam.orthographic) {
             cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, desiredZoom, smoothSpeed);
@@ -59,5 +40,4 @@ public class DynamicCameraController : MonoBehaviour {
             cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, desiredZoom, smoothSpeed);
         }
     }
-
 }

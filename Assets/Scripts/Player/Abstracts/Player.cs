@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,13 +19,23 @@ public abstract class Player : Character {
     protected virtual int normalAttackDamage { get; set; } = 10;
     public float jumpSpeed, groundSpeed, acceleration;
     protected bool jumpInput;
-
     protected float minX = -12.5f;
     protected float maxX = 12.5f;
-
     protected float lastNormalAttackTime = 0f;
     protected float lastHeavyAttackTime = 0f;
     public int lives = 2;
+    public GameObject life1;
+    public GameObject life2;
+    protected abstract Image HealthBar { get; }
+    public AnimationClip deathAnimation;
+    private Vector3 startingPosition;
+    protected RoundScript roundScript;
+    protected CountdownTimer timer;
+    protected void Awake() {
+        startingPosition = transform.position;
+        roundScript = FindObjectOfType<RoundScript>();
+        timer = FindObjectOfType<CountdownTimer>();
+    }
 
     protected override void Update() {
         base.Update();
@@ -56,7 +68,45 @@ public abstract class Player : Character {
     }
 
     protected void Die() {
-        Debug.Log("Player has died.");
+        if (lives >= -1) {
+            animator.SetTrigger("IsDead");
+            if (lives == 1) {
+                life1.SetActive(false);
+            } else if (lives == 0) {
+                life2.SetActive(false);
+            } 
+        } else {
+            GameOver();
+        }
+    }
+
+    private void GameOver() {
+        Debug.Log("Game is over");
+    }
+
+    public void FreezeOnLastFrame() {
+        animator.speed = 0;
+        StartCoroutine(PauseAfterDeath());
+    }
+
+    private IEnumerator PauseAfterDeath() {
+        Time.timeScale = 0;
+        yield return new WaitForSecondsRealtime(5);
+
+        Player[] players = FindObjectsOfType<Player>();
+        foreach (Player player in players) {
+            player.ResetForNewRound(player.startingPosition);
+        }
+        Time.timeScale = 1;
+        roundScript.StartNewRound();
+        animator.speed = 1;
+    }
+
+    public void ResetForNewRound(Vector3 startPosition) {
+        currentHealth = maxHealth;
+        transform.position = startPosition;
+        HealthBar.fillAmount = 1;
+        timer.ResetTimer();
     }
 
     protected override void GetMovementInput() {

@@ -20,4 +20,7 @@ public class CountdownTimer : MonoBehaviour {
             Debug.Log("Time's up!");
         }
     }
+    public void ResetTimer() {
+        currentTime = 180;
+    }
 }
