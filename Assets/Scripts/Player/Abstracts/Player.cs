@@ -19,8 +19,8 @@ public abstract class Player : Character {
     protected virtual int normalAttackDamage { get; set; } = 10;
     public float jumpSpeed, groundSpeed, acceleration;
     protected bool jumpInput;
-    protected float minX = -12.5f;
-    protected float maxX = 12.5f;
+    protected float minX = -15f;
+    protected float maxX = 15f;
     protected float lastNormalAttackTime = 0f;
     protected float lastHeavyAttackTime = 0f;
     public int lives = 2;
