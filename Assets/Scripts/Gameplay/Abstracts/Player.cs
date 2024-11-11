@@ -5,18 +5,13 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public abstract class Player : Character {
-    [SerializeField]
-    protected virtual int maxHealth { get; set; } = 100;
-    [SerializeField]
-    protected virtual int currentHealth { get; set; } = 100;
-    [SerializeField]
-    protected virtual float normalAttackCooldown{ get; set; } = 1.0f;
-    [SerializeField]
-    protected virtual float heavyAttackCooldown { get; set; } = 15.0f;
-    [SerializeField]
-    protected virtual int heavyAttackDamage { get; set; } = 20;
-    [SerializeField]
-    protected virtual int normalAttackDamage { get; set; } = 10;
+    [SerializeField] protected int maxHealth = 100;
+    [SerializeField] protected int currentHealth;
+    [SerializeField] protected int HeavyAttackDamage = 12;
+    [SerializeField] protected int NormalAttackDamage = 8;
+    [SerializeField] protected float NormalAttackCooldown = 0.5f;
+    [SerializeField] protected float HeavyAttackCooldown = 12.5f;
+    [SerializeField] protected float DamageReduction = 0.5f;
     public float jumpSpeed, groundSpeed, acceleration;
     protected bool jumpInput;
     protected float minX = -15f;
@@ -27,10 +22,10 @@ public abstract class Player : Character {
     public GameObject life1;
     public GameObject life2;
     protected abstract Image HealthBar { get; }
-    public AnimationClip deathAnimation;
     private Vector3 startingPosition;
     protected RoundScript roundScript;
     protected CountdownTimer timer;
+    protected bool isBlocking = false;
     protected void Awake() {
         startingPosition = transform.position;
         roundScript = FindObjectOfType<RoundScript>();
@@ -40,6 +35,28 @@ public abstract class Player : Character {
     protected override void Update() {
         base.Update();
         HandleJump();
+        HandleBlock();
+    }
+    protected void HandleBlock() {
+        if (Input.GetKey(GetBlockKey())) {
+            StartBlocking();
+        } else {
+            StopBlocking();
+        }
+    }
+    private void StopBlocking() {
+        if(isBlocking) {
+            isBlocking = false;
+            animator.SetBool("IsBlocking", false);
+        }
+    
+    }
+
+    private void StartBlocking() {
+        if(!isBlocking) {
+            isBlocking = true;
+            animator.SetBool("IsBlocking", true);
+        }
     }
     private void HandleJump() {
         if (jumpInput && grounded) {

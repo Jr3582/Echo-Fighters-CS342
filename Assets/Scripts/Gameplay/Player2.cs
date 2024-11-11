@@ -4,17 +4,8 @@ using UnityEngine.UI;
 public class Player2 : Player {
     private Player1 player1;
     public CircleCollider2D attackCollider;
-    protected new int heavyAttackDamage = 14;
-    protected new int normalAttackDamage = 10;
-    protected new float normalAttackCooldown = 1.50f;
-    protected new float heavyAttackCooldown = 20.0f;
-    protected new int maxHealth = 125;
-    protected new int currentHealth = 125;
-    [SerializeField]
-    private AttackCoolDownUI player2AttackCoolDownUI;
-    public Image player2HealthBar;
-    private bool isBlocking = false;
-
+    [SerializeField] private AttackCoolDownUI player2AttackCoolDownUI;
+    [SerializeField] private Image player2HealthBar;
     protected override Image HealthBar => player2HealthBar;
 
     protected override void Start() {
@@ -26,30 +17,8 @@ public class Player2 : Player {
     protected override void Update() {
         base.Update();
         HandleAttack();
-        HandleBlock();
     }
 
-    private void HandleBlock() {
-        if (Input.GetKey(GetBlockKey())) {
-            StartBlocking();
-        } else {
-            StopBlocking();
-        }
-    }
-        private void StopBlocking() {
-        if(isBlocking) {
-            isBlocking = false;
-            animator.SetBool("IsBlocking", false);
-        }
-    
-    }
-
-    private void StartBlocking() {
-        if(!isBlocking) {
-            isBlocking = true;
-            animator.SetBool("IsBlocking", true);
-        }
-    }
 
     protected override float GetHorizontalInput() {
         if (Input.GetKey(KeyCode.LeftArrow)) return -1f;
@@ -77,26 +46,25 @@ public class Player2 : Player {
         }
     }
 
-    private void HandleAttack() {
+    protected void HandleAttack() {
         float currentTime = Time.time;
 
         if (Input.GetKeyDown(GetAttackKey())) {
-            if (currentTime - lastNormalAttackTime >= normalAttackCooldown) {
+            if (currentTime - lastNormalAttackTime >= NormalAttackCooldown) {
                 TriggerAttack();
                 lastNormalAttackTime = currentTime;
-                CheckForDamage(normalAttackDamage);
+                CheckForDamage(NormalAttackDamage);
             }
         } else if (Input.GetKeyDown(GetHeavyAttackKey())) {
-            if (currentTime - lastHeavyAttackTime >= heavyAttackCooldown) {
+            if (currentTime - lastHeavyAttackTime >= HeavyAttackCooldown) {
                 TriggerHeavyAttack();
                 lastHeavyAttackTime = currentTime;
-                CheckForDamage(heavyAttackDamage);
+                CheckForDamage(HeavyAttackDamage);
                 player2AttackCoolDownUI.StartHeavyAttackCooldown();
             }
         }
     }
-
-    private void CheckForDamage(int damage) {
+    protected void CheckForDamage(int damage) {
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(attackCollider.bounds.center, attackCollider.radius);
         foreach (var hitCollider in hitColliders) {
             if (hitCollider.CompareTag("Player1")) {
@@ -114,7 +82,7 @@ public class Player2 : Player {
             player2HealthBar.fillAmount = healthPercentage;
             HasBeenHit();
         } else if (isBlocking) {
-            currentHealth -= (int)(damage * 0.6);
+            currentHealth -= (int)(damage * DamageReduction);
             float healthPercentage = (float)currentHealth / maxHealth;
             player2HealthBar.fillAmount = healthPercentage;
             HasBeenHit();
@@ -144,7 +112,7 @@ public class Player2 : Player {
     private void HasBeenHit() {
         animator.SetTrigger("IsHit");
     }
-
+    
     public void ResetAttack() {
         animator.SetBool("IsAttacking", false);
     }

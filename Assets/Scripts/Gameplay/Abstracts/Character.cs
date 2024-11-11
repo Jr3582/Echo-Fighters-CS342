@@ -42,9 +42,9 @@ public abstract class Character : MonoBehaviour {
 
     private void UpdateAnimations() {
         animator.SetFloat("Speed", Mathf.Abs(xInput));
-        bool isJumping = !grounded && rb.velocity.y > 0;
+        bool isJumping = !grounded && rb.velocity.y > 1;
         animator.SetBool("IsJumping", isJumping);
-        bool isFalling = !grounded && rb.velocity.y <= 0;
+        bool isFalling = !grounded && rb.velocity.y < -0.5;
         animator.SetBool("IsFalling", isFalling);
     }
 }

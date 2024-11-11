@@ -5,13 +5,8 @@ using UnityEngine.UI;
 public class Player1 : Player {
     private Player2 player2;
     public CircleCollider2D attackCollider;
-    protected new int heavyAttackDamage = 12;
-    protected new int normalAttackDamage = 8;
-    protected new float normalAttackCooldown  = 0.50f;
-    protected new float heavyAttackCooldown = 12.50f;
     [SerializeField] private AttackCoolDownUI player1AttackCoolDownUI;
-    [SerializeField] public Image player1HealthBar;
-    private bool isBlocking = false;
+    [SerializeField] private Image player1HealthBar;
 
     protected override Image HealthBar => player1HealthBar;
     protected override void Start() {
@@ -23,30 +18,6 @@ public class Player1 : Player {
     protected override void Update() {
         base.Update();
         HandleAttack();
-        HandleBlock();
-    }
-
-    private void HandleBlock() {
-        if (Input.GetKey(GetBlockKey())) {
-            StartBlocking();
-        } else {
-            StopBlocking();
-        }
-    }
-
-    private void StopBlocking() {
-        if(isBlocking) {
-            isBlocking = false;
-            animator.SetBool("IsBlocking", false);
-        }
-    
-    }
-
-    private void StartBlocking() {
-        if(!isBlocking) {
-            isBlocking = true;
-            animator.SetBool("IsBlocking", true);
-        }
     }
 
     protected override float GetHorizontalInput() {
@@ -59,16 +30,16 @@ public class Player1 : Player {
         float currentTime = Time.time;
 
         if (Input.GetKeyDown(GetAttackKey())) {
-            if (currentTime - lastNormalAttackTime >= normalAttackCooldown) {
+            if (currentTime - lastNormalAttackTime >= NormalAttackCooldown) {
                 TriggerAttack();
                 lastNormalAttackTime = currentTime;
-                CheckForDamage(normalAttackDamage);
+                CheckForDamage(NormalAttackDamage);
             }
         } else if (Input.GetKeyDown(GetHeavyAttackKey())) {
-            if (currentTime - lastHeavyAttackTime >= heavyAttackCooldown) {
+            if (currentTime - lastHeavyAttackTime >= HeavyAttackCooldown) {
                 TriggerHeavyAttack();
                 lastHeavyAttackTime = currentTime;
-                CheckForDamage(heavyAttackDamage);
+                CheckForDamage(HeavyAttackDamage);
                 player1AttackCoolDownUI.StartHeavyAttackCooldown();
             }
         }
@@ -91,7 +62,7 @@ public class Player1 : Player {
             player1HealthBar.fillAmount = healthPercentage;
             HasBeenHit();
         } else if (isBlocking) {
-            currentHealth -= (int)(damage * 0.8);
+            currentHealth -= (int)(damage * DamageReduction);
             float healthPercentage = (float)currentHealth / maxHealth;
             player1HealthBar.fillAmount = healthPercentage;
             HasBeenHit();
