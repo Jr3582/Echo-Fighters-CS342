@@ -5,8 +5,8 @@ using UnityEngine.UI;
 public class Player1 : Player {
     private Player2 player2;
     public CircleCollider2D attackCollider;
-    [SerializeField] private AttackCoolDownUI player1AttackCoolDownUI;
-    [SerializeField] private Image player1HealthBar;
+    [SerializeField] public AttackCoolDownUI player1AttackCoolDownUI;
+    [SerializeField] public Image player1HealthBar;
 
     protected override Image HealthBar => player1HealthBar;
     protected override void Start() {
@@ -104,5 +104,8 @@ public class Player1 : Player {
 
     public void ResetHeavyAttack() {
         animator.SetBool("IsHeavyAttack", false);
+    }
+    public void ResetToIdle() {
+        animator.Play("Idle");
     }
 }

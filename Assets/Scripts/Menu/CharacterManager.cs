@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CharacterManager : MonoBehaviour
 {
@@ -34,7 +35,6 @@ public class CharacterManager : MonoBehaviour
         }
     }
 
-    // For Player 1
     public void NextOptionPlayer1()
     {
         player1SelectedCharacter = (player1SelectedCharacter + 1) % player1Characters.Count;
@@ -49,7 +49,6 @@ public class CharacterManager : MonoBehaviour
         player1SelectedPrefab = player1Prefabs[player1SelectedCharacter];
     }
 
-    // For Player 2
     public void NextOptionPlayer2()
     {
         player2SelectedCharacter = (player2SelectedCharacter + 1) % player2Characters.Count;
@@ -74,18 +73,67 @@ public class CharacterManager : MonoBehaviour
     {
         if (scene.name == "GameplayScene")
         {
-            // Spawn Player 1
+            GameObject player1Instance = null;
+            GameObject player2Instance = null;
+
             if (player1SelectedPrefab != null)
             {
                 Vector3 player1SpawnPosition = new Vector3(-6.5f, -2f, 0f);
-                Instantiate(player1SelectedPrefab, player1SpawnPosition, Quaternion.identity);
+                player1Instance = Instantiate(player1SelectedPrefab, player1SpawnPosition, Quaternion.identity);
+
+                GameObject player1HealthBarUI = GameObject.Find("P1Health");
+                GameObject player1CooldownUI = GameObject.Find("AttackCoolDownUIP1");
+                GameObject player1Life1 = GameObject.Find("P1Life1");
+                GameObject player1Life2 = GameObject.Find("P1Life2");
+
+                if (player1HealthBarUI != null && player1CooldownUI != null)
+                {
+                    Player1 player1Script = player1Instance.GetComponent<Player1>();
+                    AttackCoolDownUI player1ScriptCooldownUI = player1CooldownUI.GetComponent<AttackCoolDownUI>();
+
+                    if (player1Script != null && player1ScriptCooldownUI != null)
+                    {
+                        player1Script.player1HealthBar = player1HealthBarUI.GetComponent<Image>();
+                        player1Script.player1AttackCoolDownUI = player1ScriptCooldownUI;
+                        player1ScriptCooldownUI.heavyAttackCooldown = player1Script.HeavyAttackCooldown;
+                        player1Script.life1 = player1Life1;
+                        player1Script.life2 = player1Life2;
+
+                    }
+                }
             }
 
-            // Spawn Player 2
             if (player2SelectedPrefab != null)
             {
-                Vector3 player2SpawnPosition = new Vector3(6.5f, -2f, 0f); // Adjust as needed
-                Instantiate(player2SelectedPrefab, player2SpawnPosition, Quaternion.identity);
+                Vector3 player2SpawnPosition = new Vector3(6.5f, -2f, 0f);
+                player2Instance = Instantiate(player2SelectedPrefab, player2SpawnPosition, Quaternion.identity);
+
+                GameObject player2HealthBarUI = GameObject.Find("P2Health");
+                GameObject player2CooldownUI = GameObject.Find("AttackCoolDownUIP2");
+                GameObject player2Life1 = GameObject.Find("P2Life1");
+                GameObject player2Life2 = GameObject.Find("P2Life2");
+
+                if (player2HealthBarUI != null && player2CooldownUI != null)
+                {
+                    Player2 player2Script = player2Instance.GetComponent<Player2>();
+                    AttackCoolDownUI player2ScriptCooldownUI = player2CooldownUI.GetComponent<AttackCoolDownUI>();
+
+                    if (player2Script != null && player2ScriptCooldownUI != null)
+                    {
+                        player2Script.player2HealthBar = player2HealthBarUI.GetComponent<Image>();
+                        player2Script.player2AttackCoolDownUI = player2ScriptCooldownUI;
+                        player2ScriptCooldownUI.heavyAttackCooldown = player2Script.HeavyAttackCooldown;
+                        player2Script.life1 = player2Life1;
+                        player2Script.life2 = player2Life2;
+                    }
+                }
+            }
+
+            DynamicCameraController cameraController = FindObjectOfType<DynamicCameraController>();
+            if (cameraController != null)
+            {
+                if (player1Instance != null) cameraController.player1 = player1Instance.transform;
+                if (player2Instance != null) cameraController.player2 = player2Instance.transform;
             }
         }
 

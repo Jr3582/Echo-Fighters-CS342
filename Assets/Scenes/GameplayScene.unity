@@ -765,7 +765,7 @@ GameObject:
   - component: {fileID: 219429175}
   - component: {fileID: 219429174}
   m_Layer: 5
-  m_Name: AttackCoolDownUI
+  m_Name: AttackCoolDownUIP1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1165,7 +1165,7 @@ GameObject:
   - component: {fileID: 405896949}
   - component: {fileID: 405896948}
   m_Layer: 5
-  m_Name: BrightYellow
+  m_Name: P1Cooldown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2587,7 +2587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff9e1417dfc274371bdbf6e3ef8cfd71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxFactor: -0.2
+  parallaxFactor: 0
 --- !u!1 &1039458338
 GameObject:
   m_ObjectHideFlags: 0
@@ -2979,7 +2979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff9e1417dfc274371bdbf6e3ef8cfd71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxFactor: -0.3
+  parallaxFactor: 0
 --- !u!1 &1086404938
 GameObject:
   m_ObjectHideFlags: 0
@@ -3733,7 +3733,7 @@ GameObject:
   - component: {fileID: 1477790568}
   - component: {fileID: 1477790567}
   m_Layer: 5
-  m_Name: Health
+  m_Name: P2Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3915,7 +3915,7 @@ GameObject:
   - component: {fileID: 1600141233}
   - component: {fileID: 1600141232}
   m_Layer: 5
-  m_Name: BrightYellow
+  m_Name: P2Cooldown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4177,7 +4177,7 @@ GameObject:
   - component: {fileID: 1666816376}
   - component: {fileID: 1666816375}
   m_Layer: 5
-  m_Name: Health
+  m_Name: P1Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5833,7 +5833,7 @@ GameObject:
   - component: {fileID: 2135772739}
   - component: {fileID: 2135772738}
   m_Layer: 5
-  m_Name: AttackCoolDownUI2
+  m_Name: AttackCoolDownUIP2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

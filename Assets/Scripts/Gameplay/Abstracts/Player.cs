@@ -10,7 +10,7 @@ public abstract class Player : Character {
     [SerializeField] protected int HeavyAttackDamage = 12;
     [SerializeField] protected int NormalAttackDamage = 8;
     [SerializeField] protected float NormalAttackCooldown = 0.5f;
-    [SerializeField] protected float HeavyAttackCooldown = 12.5f;
+    [SerializeField] public float HeavyAttackCooldown = 12.5f;
     [SerializeField] protected float DamageReduction = 0.5f;
     public float jumpSpeed, groundSpeed, acceleration;
     protected bool jumpInput;

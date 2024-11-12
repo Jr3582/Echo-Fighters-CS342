@@ -79,7 +79,7 @@ GameObject:
   - component: {fileID: 554007212808222743}
   m_Layer: 8
   m_Name: PlayerCollider
-  m_TagString: Player2
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -254,9 +254,9 @@ Transform:
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 5322478978739368194}
   - {fileID: 7828418430947958458}
   - {fileID: 6643534431929376306}
-  - {fileID: 5322478978739368194}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4086621263616975413

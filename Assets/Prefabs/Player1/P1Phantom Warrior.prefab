@@ -380,7 +380,7 @@ MonoBehaviour:
     m_Bits: 512
   animator: {fileID: 4203475745411670953}
   maxHealth: 100
-  currentHealth: 0
+  currentHealth: 100
   HeavyAttackDamage: 12
   NormalAttackDamage: 8
   NormalAttackCooldown: 0.5

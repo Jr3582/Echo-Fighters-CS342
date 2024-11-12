@@ -4,8 +4,8 @@ using UnityEngine.UI;
 public class Player2 : Player {
     private Player1 player1;
     public CircleCollider2D attackCollider;
-    [SerializeField] private AttackCoolDownUI player2AttackCoolDownUI;
-    [SerializeField] private Image player2HealthBar;
+    [SerializeField] public AttackCoolDownUI player2AttackCoolDownUI;
+    [SerializeField] public Image player2HealthBar;
     protected override Image HealthBar => player2HealthBar;
 
     protected override void Start() {
@@ -18,7 +18,6 @@ public class Player2 : Player {
         base.Update();
         HandleAttack();
     }
-
 
     protected override float GetHorizontalInput() {
         if (Input.GetKey(KeyCode.LeftArrow)) return -1f;
