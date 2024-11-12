@@ -53,3 +53,12 @@ TagManager:
   - name: Character
     uniqueID: 2917164559
     locked: 0
+  - name: Sky
+    uniqueID: 3162280749
+    locked: 0
+  - name: Mountains
+    uniqueID: 2927853853
+    locked: 0
+  - name: Trees
+    uniqueID: 2568390969
+    locked: 0
