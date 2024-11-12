@@ -8,11 +8,15 @@ public class CharacterManager : MonoBehaviour
     public SpriteRenderer player1SpriteRenderer;
     public SpriteRenderer player2SpriteRenderer;
 
+    public List<GameObject> player1Name = new List<GameObject>();
     public List<Sprite> player1Characters = new List<Sprite>();
     public List<GameObject> player1Prefabs;
+    public List<GameObject> player1Descriptions = new List<GameObject>();
 
+    public List<GameObject> player2Name = new List<GameObject>();
     public List<Sprite> player2Characters = new List<Sprite>();
     public List<GameObject> player2Prefabs;
+    public List<GameObject> player2Descriptions = new List<GameObject>();
 
     private int player1SelectedCharacter = 0;
     private int player2SelectedCharacter = 0;
@@ -22,45 +26,62 @@ public class CharacterManager : MonoBehaviour
 
     private void Start()
     {
-        if (player1Characters.Count > 0 && player1Prefabs.Count > 0)
-        {
-            player1SpriteRenderer.sprite = player1Characters[player1SelectedCharacter];
-            player1SelectedPrefab = player1Prefabs[player1SelectedCharacter];
-        }
-
-        if (player2Characters.Count > 0 && player2Prefabs.Count > 0)
-        {
-            player2SpriteRenderer.sprite = player2Characters[player2SelectedCharacter];
-            player2SelectedPrefab = player2Prefabs[player2SelectedCharacter];
-        }
+        UpdatePlayer1Selection();
+        UpdatePlayer2Selection();
     }
 
     public void NextOptionPlayer1()
     {
         player1SelectedCharacter = (player1SelectedCharacter + 1) % player1Characters.Count;
-        player1SpriteRenderer.sprite = player1Characters[player1SelectedCharacter];
-        player1SelectedPrefab = player1Prefabs[player1SelectedCharacter];
+        UpdatePlayer1Selection();
     }
 
     public void BackOptionPlayer1()
     {
         player1SelectedCharacter = (player1SelectedCharacter - 1 + player1Characters.Count) % player1Characters.Count;
-        player1SpriteRenderer.sprite = player1Characters[player1SelectedCharacter];
-        player1SelectedPrefab = player1Prefabs[player1SelectedCharacter];
+        UpdatePlayer1Selection();
     }
 
     public void NextOptionPlayer2()
     {
         player2SelectedCharacter = (player2SelectedCharacter + 1) % player2Characters.Count;
-        player2SpriteRenderer.sprite = player2Characters[player2SelectedCharacter];
-        player2SelectedPrefab = player2Prefabs[player2SelectedCharacter];
+        UpdatePlayer2Selection();
     }
 
     public void BackOptionPlayer2()
     {
         player2SelectedCharacter = (player2SelectedCharacter - 1 + player2Characters.Count) % player2Characters.Count;
+        UpdatePlayer2Selection();
+    }
+
+    private void UpdatePlayer1Selection()
+    {
+        player1SpriteRenderer.sprite = player1Characters[player1SelectedCharacter];
+        player1SelectedPrefab = player1Prefabs[player1SelectedCharacter];
+        
+        foreach (GameObject name in player1Name) name.SetActive(false);
+        foreach (GameObject description in player1Descriptions) description.SetActive(false);
+        
+        if (player1Name.Count > player1SelectedCharacter)
+            player1Name[player1SelectedCharacter].SetActive(true);
+        
+        if (player1Descriptions.Count > player1SelectedCharacter)
+            player1Descriptions[player1SelectedCharacter].SetActive(true);
+    }
+
+    private void UpdatePlayer2Selection()
+    {
         player2SpriteRenderer.sprite = player2Characters[player2SelectedCharacter];
         player2SelectedPrefab = player2Prefabs[player2SelectedCharacter];
+        
+        foreach (GameObject name in player2Name) name.SetActive(false);
+        foreach (GameObject description in player2Descriptions) description.SetActive(false);
+        
+        if (player2Name.Count > player2SelectedCharacter)
+            player2Name[player2SelectedCharacter].SetActive(true);
+        
+        if (player2Descriptions.Count > player2SelectedCharacter)
+            player2Descriptions[player2SelectedCharacter].SetActive(true);
     }
 
     public void PlayGame()
