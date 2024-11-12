@@ -3242,11 +3242,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: '- Slow a.f.
 
-    - Small range
-
     - Low damage
 
-    - Very High defense'
+    - No range
+
+    - Can''t fly'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e45d0ee1684a94697838d420e40fa76d, type: 2}
   m_sharedMaterial: {fileID: 5116279443237634427, guid: e45d0ee1684a94697838d420e40fa76d, type: 2}
@@ -3875,11 +3875,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: '- Slow a.f.
 
-    - Small range
-
     - Low damage
 
-    - Very High defense'
+    - No range
+
+    - Can''t fly'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e45d0ee1684a94697838d420e40fa76d, type: 2}
   m_sharedMaterial: {fileID: 5116279443237634427, guid: e45d0ee1684a94697838d420e40fa76d, type: 2}
