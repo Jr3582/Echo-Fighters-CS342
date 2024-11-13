@@ -62,3 +62,6 @@ TagManager:
   - name: Trees
     uniqueID: 2568390969
     locked: 0
+  - name: Select
+    uniqueID: 942510883
+    locked: 0

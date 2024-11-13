@@ -225,13 +225,13 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   animator: {fileID: 3899288913390019295}
-  maxHealth: 175
-  currentHealth: 175
+  maxHealth: 200
+  currentHealth: 200
   HeavyAttackDamage: 0
   NormalAttackDamage: 8
   NormalAttackCooldown: 0.35
   HeavyAttackCooldown: 1000000
-  DamageReduction: 0.4
+  DamageReduction: 0.35
   jumpSpeed: 2
   groundSpeed: 0.75
   acceleration: 2
