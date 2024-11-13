@@ -381,11 +381,11 @@ MonoBehaviour:
   animator: {fileID: 4203475745411670953}
   maxHealth: 100
   currentHealth: 100
-  HeavyAttackDamage: 12
+  HeavyAttackDamage: 16
   NormalAttackDamage: 8
   NormalAttackCooldown: 0.5
   HeavyAttackCooldown: 12.5
-  DamageReduction: 0.4
+  DamageReduction: 0.75
   jumpSpeed: 4.5
   groundSpeed: 3.5
   acceleration: 0.6

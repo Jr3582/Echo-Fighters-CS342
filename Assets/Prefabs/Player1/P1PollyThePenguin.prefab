@@ -382,8 +382,8 @@ MonoBehaviour:
   maxHealth: 200
   currentHealth: 200
   HeavyAttackDamage: 0
-  NormalAttackDamage: 8
-  NormalAttackCooldown: 0.35
+  NormalAttackDamage: 6
+  NormalAttackCooldown: 0.25
   HeavyAttackCooldown: 1000000
   DamageReduction: 0.35
   jumpSpeed: 2
