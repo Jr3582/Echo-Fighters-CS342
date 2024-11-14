@@ -12,4 +12,8 @@ public class CharacterSelect : MonoBehaviour
     public void GoBackToMainMenu() {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void GoToCharacterInfo() {
+        SceneManager.LoadScene("InfoScene");
+    }
 }

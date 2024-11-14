@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 375c6f765985c4a539f757c9c8b5cfec
+guid: 2ea1686be54a24e2c81970909fc278cc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,7 +45,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -65,7 +65,7 @@ TextureImporter:
   ignorePngGamma: 0
   applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -85,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,7 +98,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tileset_0
+      name: dga5z32-ef8b4f7c-571f-4076-9165-5c332b75dab4_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
+        x: 90
+        y: 640
         width: 160
-        height: 96
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cdc01cc1a9ad4ff6a45e6778248fb53
-      internalID: 1767911849
+      spriteID: 50c65e169cf634efb8c5840e0a3ec347
+      internalID: -83343449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_1
+      name: dga5z32-ef8b4f7c-571f-4076-9165-5c332b75dab4_1
       rect:
         serializedVersion: 2
-        x: 176
-        y: 69
-        width: 64
-        height: 43
+        x: 320
+        y: 520
+        width: 310
+        height: 290
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 736f7e41fed4c40cd99a7745fd44a4f9
-      internalID: -1281571734
+      spriteID: 7bd6d092632c5483aa9278dd661d7a86
+      internalID: 1979669169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_2
+      name: dga5z32-ef8b4f7c-571f-4076-9165-5c332b75dab4_2
       rect:
         serializedVersion: 2
-        x: 272
-        y: 69
-        width: 64
-        height: 43
+        x: 700
+        y: 500
+        width: 330
+        height: 350
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ede2f45804e704f859fee20014a6ada0
-      internalID: -755942434
+      spriteID: 595d307c069a34ae6a68bc5fa7f18b08
+      internalID: 127495461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_3
+      name: dga5z32-ef8b4f7c-571f-4076-9165-5c332b75dab4_3
       rect:
         serializedVersion: 2
-        x: 361
-        y: 16
-        width: 85
-        height: 96
+        x: 90
+        y: 460
+        width: 150
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e26e59d1c9f2644e8b9733d98242fd25
-      internalID: -192206438
+      spriteID: 03c0e034c992342308ce2880fbc3a51a
+      internalID: -1359769357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_4
+      name: dga5z32-ef8b4f7c-571f-4076-9165-5c332b75dab4_4
       rect:
         serializedVersion: 2
-        x: 471
-        y: 16
-        width: 137
-        height: 96
+        x: 90
+        y: 280
+        width: 160
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a093b3fdb632d46928a7a61d6d116dfb
-      internalID: 1466872509
+      spriteID: be62d2da8051242b8a5cb8dc73849f61
+      internalID: 1722159168
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_5
+      name: dga5z32-ef8b4f7c-571f-4076-9165-5c332b75dab4_5
       rect:
         serializedVersion: 2
-        x: 185
-        y: 5
-        width: 85
-        height: 43
+        x: 310
+        y: 100
+        width: 340
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,8 +229,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48c4a8793c56545d895b1dd3b1f13866
-      internalID: -370262420
+      spriteID: c55c6c000f0cd4df68866d4a57eae9be
+      internalID: 1351665751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dga5z32-ef8b4f7c-571f-4076-9165-5c332b75dab4_6
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 100
+        width: 390
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 733de41ec8c004fed8c9539b1cdd78d6
+      internalID: 868808671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dga5z32-ef8b4f7c-571f-4076-9165-5c332b75dab4_7
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 90
+        width: 160
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89ef8dfc72c94b218eedac49d51e219
+      internalID: 124416135
       vertices: []
       indices: 
       edges: []
@@ -246,12 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      tileset_0: 1767911849
-      tileset_1: -1281571734
-      tileset_2: -755942434
-      tileset_3: -192206438
-      tileset_4: 1466872509
-      tileset_5: -370262420
+      dga5z32-ef8b4f7c-571f-4076-9165-5c332b75dab4_0: -83343449
+      dga5z32-ef8b4f7c-571f-4076-9165-5c332b75dab4_1: 1979669169
+      dga5z32-ef8b4f7c-571f-4076-9165-5c332b75dab4_2: 127495461
+      dga5z32-ef8b4f7c-571f-4076-9165-5c332b75dab4_3: -1359769357
+      dga5z32-ef8b4f7c-571f-4076-9165-5c332b75dab4_4: 1722159168
+      dga5z32-ef8b4f7c-571f-4076-9165-5c332b75dab4_5: 1351665751
+      dga5z32-ef8b4f7c-571f-4076-9165-5c332b75dab4_6: 868808671
+      dga5z32-ef8b4f7c-571f-4076-9165-5c332b75dab4_7: 124416135
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

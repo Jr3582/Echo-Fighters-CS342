@@ -41,14 +41,11 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
+  - name: Layer0
     uniqueID: 4172205603
     locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Player
-    uniqueID: 83794253
     locked: 0
   - name: Character
     uniqueID: 2917164559
@@ -56,12 +53,24 @@ TagManager:
   - name: Sky
     uniqueID: 3162280749
     locked: 0
-  - name: Mountains
+  - name: Background
     uniqueID: 2927853853
     locked: 0
-  - name: Trees
+  - name: Middle
     uniqueID: 2568390969
     locked: 0
-  - name: Select
+  - name: Foreground
     uniqueID: 942510883
+    locked: 0
+  - name: Platform1
+    uniqueID: 861862605
+    locked: 0
+  - name: Platform2
+    uniqueID: 3451729915
+    locked: 0
+  - name: Player
+    uniqueID: 83794253
+    locked: 0
+  - name: Obstacle
+    uniqueID: 2788584389
     locked: 0

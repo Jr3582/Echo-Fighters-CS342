@@ -14,8 +14,8 @@ public abstract class Player : Character {
     [SerializeField] protected float DamageReduction = 0.5f;
     public float jumpSpeed, groundSpeed, acceleration;
     protected bool jumpInput;
-    protected float minX = -25f;
-    protected float maxX = 25f;
+    protected float minX = -27.5f;
+    protected float maxX = 27.5f;
     protected float lastNormalAttackTime = 0f;
     protected float lastHeavyAttackTime = 0f;
     public int lives = 2;

@@ -3,13 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MapSelect : MonoBehaviour
+public class InfoScene : MonoBehaviour
 {
-    public void SelectMap() {
-        SceneManager.LoadScene("GameplayScene");
-    }
-
-    public void GoBackToCharacterSelect() {
+    public void BackToSelectCharacter() {
         SceneManager.LoadScene("CharacterSelect");
     }
 }
