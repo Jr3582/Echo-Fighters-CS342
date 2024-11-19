@@ -385,8 +385,8 @@ MonoBehaviour:
   NormalAttackDamage: 8
   NormalAttackCooldown: 0.5
   HeavyAttackCooldown: 12.5
-  DamageReduction: 0.75
-  jumpSpeed: 6.5
+  DamageReduction: 0.65
+  jumpSpeed: 5.5
   groundSpeed: 3.5
   acceleration: 0.6
   lives: 2

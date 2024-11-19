@@ -10,10 +10,18 @@ public class CharacterSelect : MonoBehaviour
     }
 
     public void GoBackToMainMenu() {
+        if (CharacterManager.Instance != null) {
+            Destroy(CharacterManager.Instance.gameObject);
+            CharacterManager.Instance = null;
+        }
         SceneManager.LoadScene("MainMenu");
     }
 
     public void GoToCharacterInfo() {
+        if (CharacterManager.Instance != null) {
+            Destroy(CharacterManager.Instance.gameObject);
+            CharacterManager.Instance = null;
+        }
         SceneManager.LoadScene("InfoScene");
     }
 }
