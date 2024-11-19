@@ -298,7 +298,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 83794253
-  m_SortingLayer: 1
+  m_SortingLayer: 8
   m_SortingOrder: 2
   m_Sprite: {fileID: 4723107735738678597, guid: 0bd97e23f8b532a4f8969605a3b00a4e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -386,7 +386,7 @@ MonoBehaviour:
   NormalAttackCooldown: 0.5
   HeavyAttackCooldown: 12.5
   DamageReduction: 0.75
-  jumpSpeed: 4.5
+  jumpSpeed: 6.5
   groundSpeed: 3.5
   acceleration: 0.6
   lives: 2

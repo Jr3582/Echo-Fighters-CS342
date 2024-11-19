@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mapName: Frenzy Forrest
   mapPreview: {fileID: 21300000, guid: eda86b425958e43048d7fd12a1efcb81, type: 3}
-  sceneName: FrenzyForest
+  sceneName: GameplayFrenzyForest

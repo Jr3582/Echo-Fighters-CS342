@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -22,11 +23,8 @@ public class CharacterManager : MonoBehaviour {
     private int player1SelectedCharacter = 0;
     private int player2SelectedCharacter = 0;
 
-    [HideInInspector]
-    public GameObject player1SelectedPrefab;
-    [HideInInspector]
-    public GameObject player2SelectedPrefab;
-
+    [HideInInspector] public GameObject player1SelectedPrefab;
+    [HideInInspector] public GameObject player2SelectedPrefab;
     private GameObject player1Instance;
     private GameObject player2Instance;
 
@@ -34,45 +32,40 @@ public class CharacterManager : MonoBehaviour {
         if (Instance == null) {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-        }
-        else {
-            Destroy(gameObject);
-        }
+        } 
     }
 
-    private void Start()
-    {
+    private void Start() {
         UpdatePlayer1Selection();
         UpdatePlayer2Selection();
     }
 
-    public void NextOptionPlayer1()
-    {
+
+    public void NextOptionPlayer1() {
         player1SelectedCharacter = (player1SelectedCharacter + 1) % player1Characters.Count;
         UpdatePlayer1Selection();
     }
 
-    public void BackOptionPlayer1()
-    {
+    public void BackOptionPlayer1() {
         player1SelectedCharacter = (player1SelectedCharacter - 1 + player1Characters.Count) % player1Characters.Count;
         UpdatePlayer1Selection();
     }
 
-    public void NextOptionPlayer2()
-    {
+    public void NextOptionPlayer2() {
         player2SelectedCharacter = (player2SelectedCharacter + 1) % player2Characters.Count;
         UpdatePlayer2Selection();
     }
 
-    public void BackOptionPlayer2()
-    {
+    public void BackOptionPlayer2() {
         player2SelectedCharacter = (player2SelectedCharacter - 1 + player2Characters.Count) % player2Characters.Count;
         UpdatePlayer2Selection();
     }
 
-    private void UpdatePlayer1Selection()
-    {
-        player1SpriteRenderer.sprite = player1Characters[player1SelectedCharacter];
+    private void UpdatePlayer1Selection() {
+        if (player1SpriteRenderer != null) {
+            player1SpriteRenderer.sprite = player1Characters[player1SelectedCharacter];
+        }
+
         player1SelectedPrefab = player1Prefabs[player1SelectedCharacter];
         
         foreach (GameObject name in player1Name) name.SetActive(false);
@@ -85,9 +78,11 @@ public class CharacterManager : MonoBehaviour {
             player1Descriptions[player1SelectedCharacter].SetActive(true);
     }
 
-    private void UpdatePlayer2Selection()
-    {
-        player2SpriteRenderer.sprite = player2Characters[player2SelectedCharacter];
+    private void UpdatePlayer2Selection() {
+        if (player2SpriteRenderer != null) {
+            player2SpriteRenderer.sprite = player2Characters[player2SelectedCharacter];
+        }
+
         player2SelectedPrefab = player2Prefabs[player2SelectedCharacter];
         
         foreach (GameObject name in player2Name) name.SetActive(false);
@@ -100,7 +95,7 @@ public class CharacterManager : MonoBehaviour {
             player2Descriptions[player2SelectedCharacter].SetActive(true);
     }
 
-    public void ProceedToMapSelection(){
+    public void ProceedToMapSelection() {
         SceneManager.LoadScene("MapSelect");
     }
 
@@ -109,21 +104,10 @@ public class CharacterManager : MonoBehaviour {
         SceneManager.LoadScene(mapSceneName);
     }
 
-    public void ResetCharacterSelection()
-    {
-        player1SelectedCharacter = 0;
-        player2SelectedCharacter = 0;
-        UpdatePlayer1Selection();
-        UpdatePlayer2Selection();
-    }
-
-    public void InitializeUIReferences() {
-        player1SpriteRenderer = GameObject.Find("Player1SpriteRendererObject").GetComponent<SpriteRenderer>();
-        player2SpriteRenderer = GameObject.Find("Player2SpriteRendererObject").GetComponent<SpriteRenderer>();
-    }
-
 
     private void OnGameplaySceneLoaded(Scene scene, LoadSceneMode mode) {
+        if (!scene.name.StartsWith("Gameplay")) return; 
+        
         if (player1SelectedPrefab != null) {
             Vector3 player1SpawnPosition = new Vector3(-6.5f, -2f, 0f);
             player1Instance = Instantiate(player1SelectedPrefab, player1SpawnPosition, Quaternion.identity);
@@ -133,13 +117,11 @@ public class CharacterManager : MonoBehaviour {
             GameObject player1Life1 = GameObject.Find("P1Life1");
             GameObject player1Life2 = GameObject.Find("P1Life2");
 
-            if (player1HealthBarUI != null && player1CooldownUI != null)
-            {
+            if (player1HealthBarUI != null && player1CooldownUI != null) {
                 Player1 player1Script = player1Instance.GetComponent<Player1>();
                 AttackCoolDownUI player1ScriptCooldownUI = player1CooldownUI.GetComponent<AttackCoolDownUI>();
 
-                if (player1Script != null && player1ScriptCooldownUI != null)
-                {
+                if (player1Script != null && player1ScriptCooldownUI != null) {
                     player1Script.player1HealthBar = player1HealthBarUI.GetComponent<Image>();
                     player1Script.player1AttackCoolDownUI = player1ScriptCooldownUI;
                     player1ScriptCooldownUI.heavyAttackCooldown = player1Script.HeavyAttackCooldown;
@@ -159,13 +141,11 @@ public class CharacterManager : MonoBehaviour {
             GameObject player2Life1 = GameObject.Find("P2Life1");
             GameObject player2Life2 = GameObject.Find("P2Life2");
 
-            if (player2HealthBarUI != null && player2CooldownUI != null)
-            {
+            if (player2HealthBarUI != null && player2CooldownUI != null) {
                 Player2 player2Script = player2Instance.GetComponent<Player2>();
                 AttackCoolDownUI player2ScriptCooldownUI = player2CooldownUI.GetComponent<AttackCoolDownUI>();
 
-                if (player2Script != null && player2ScriptCooldownUI != null)
-                {
+                if (player2Script != null && player2ScriptCooldownUI != null) {
                     player2Script.player2HealthBar = player2HealthBarUI.GetComponent<Image>();
                     player2Script.player2AttackCoolDownUI = player2ScriptCooldownUI;
                     player2ScriptCooldownUI.heavyAttackCooldown = player2Script.HeavyAttackCooldown;
@@ -176,8 +156,8 @@ public class CharacterManager : MonoBehaviour {
         }
 
         DynamicCameraController cameraController = FindObjectOfType<DynamicCameraController>();
-        if (cameraController != null)
-        {
+
+        if (cameraController != null) {
             if (player1Instance != null) cameraController.player1 = player1Instance.transform;
             if (player2Instance != null) cameraController.player2 = player2Instance.transform;
         }
