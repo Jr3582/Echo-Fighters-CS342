@@ -10,6 +10,7 @@ public class ParticleTransition : MonoBehaviour
     public string nextScene;
 
     public void PlayParticle() {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.menuButtonSound);
         GameObject particles = Instantiate(particlePrefab, Vector3.zero, Quaternion.identity);
         StartCoroutine(WaitAndTransition());
     }
