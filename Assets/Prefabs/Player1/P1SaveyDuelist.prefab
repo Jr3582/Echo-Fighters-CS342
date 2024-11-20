@@ -320,7 +320,7 @@ MonoBehaviour:
   HeavyAttackCooldown: 24
   DamageReduction: 0.5
   jumpSpeed: 3
-  groundSpeed: 3.5
+  groundSpeed: 1.75
   acceleration: 1.25
   lives: 2
   life1: {fileID: 0}
