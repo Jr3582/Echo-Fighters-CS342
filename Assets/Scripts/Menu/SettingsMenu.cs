@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class SettingsMenu : MonoBehaviour
 {
     public void GoBackToMainMenu() {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.backButtonSound);
+        Invoke(nameof(LoadMainMenu), .5f);
+    }
+    public void LoadMainMenu() {
         SceneManager.LoadScene("MainMenu");
     }
 }

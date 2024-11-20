@@ -42,21 +42,25 @@ public class CharacterManager : MonoBehaviour {
 
 
     public void NextOptionPlayer1() {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.arrowButtonSound);
         player1SelectedCharacter = (player1SelectedCharacter + 1) % player1Characters.Count;
         UpdatePlayer1Selection();
     }
 
     public void BackOptionPlayer1() {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.arrowButtonSound);
         player1SelectedCharacter = (player1SelectedCharacter - 1 + player1Characters.Count) % player1Characters.Count;
         UpdatePlayer1Selection();
     }
 
     public void NextOptionPlayer2() {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.arrowButtonSound);
         player2SelectedCharacter = (player2SelectedCharacter + 1) % player2Characters.Count;
         UpdatePlayer2Selection();
     }
 
     public void BackOptionPlayer2() {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.arrowButtonSound);
         player2SelectedCharacter = (player2SelectedCharacter - 1 + player2Characters.Count) % player2Characters.Count;
         UpdatePlayer2Selection();
     }
@@ -96,14 +100,19 @@ public class CharacterManager : MonoBehaviour {
     }
 
     public void ProceedToMapSelection() {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.continueButtonSound);
+        Invoke(nameof(LoadMapSelect), .5f);
+    }
+
+    public void LoadMapSelect() {
         SceneManager.LoadScene("MapSelect");
     }
 
     public void LoadGameplayScene(string mapSceneName) {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.menuButtonSound);
         SceneManager.sceneLoaded += OnGameplaySceneLoaded;
         SceneManager.LoadScene(mapSceneName);
     }
-
 
     private void OnGameplaySceneLoaded(Scene scene, LoadSceneMode mode) {
         if (!scene.name.StartsWith("Gameplay")) return; 

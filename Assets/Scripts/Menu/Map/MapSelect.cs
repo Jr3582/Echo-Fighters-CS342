@@ -11,6 +11,11 @@ public class MapSelect : MonoBehaviour {
             CharacterManager.Instance = null;
         }
 
+        SoundManager.Instance.PlaySound(SoundManager.Instance.backButtonSound);
+        Invoke(nameof(LoadMainMenu), .5f);
+    }
+
+    public void LoadMainMenu() {
         SceneManager.LoadScene("CharacterSelect");
     }
 }
