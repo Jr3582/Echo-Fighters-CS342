@@ -19,11 +19,13 @@ public class MapSelector : MonoBehaviour
     }
 
     public void NextMap() {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.arrowButtonSound);
         selectedMapIndex = (selectedMapIndex + 1) % maps.Count;
         DisplayMapInfo(selectedMapIndex);
     }
 
     public void PreviousMap() {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.arrowButtonSound);
         selectedMapIndex = (selectedMapIndex - 1 + maps.Count) % maps.Count;
         DisplayMapInfo(selectedMapIndex);
     }
@@ -35,8 +37,14 @@ public class MapSelector : MonoBehaviour
     }
 
     public void StartGame() {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.continueButtonSound);
+        Invoke(nameof(LoadGameplay), .5f);
+    }
+
+    public void LoadGameplay() {
         string sceneToLoad = maps[selectedMapIndex].sceneName;
         SelectMapAndStartGame(sceneToLoad);
+        MusicManager.Instance.StopMusic();
     }
 
     public void SelectMapAndStartGame(string mapSceneName) {
