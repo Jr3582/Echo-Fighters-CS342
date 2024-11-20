@@ -38,13 +38,13 @@ public class MapSelector : MonoBehaviour
 
     public void StartGame() {
         SoundManager.Instance.PlaySound(SoundManager.Instance.continueButtonSound);
+        MusicManager.Instance.PlayGameplayMusic();
         Invoke(nameof(LoadGameplay), .5f);
     }
 
     public void LoadGameplay() {
         string sceneToLoad = maps[selectedMapIndex].sceneName;
         SelectMapAndStartGame(sceneToLoad);
-        MusicManager.Instance.StopMusic();
     }
 
     public void SelectMapAndStartGame(string mapSceneName) {

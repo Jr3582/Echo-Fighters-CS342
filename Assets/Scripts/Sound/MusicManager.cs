@@ -6,6 +6,8 @@ public class MusicManager : MonoBehaviour
 {
     public static MusicManager Instance;
     public AudioSource backgroundMusic;
+    public AudioClip menuMusic;
+    public AudioClip gameplayMusic;
 
     private void Awake() {
         if (Instance != null && Instance != this) {
@@ -15,9 +17,28 @@ public class MusicManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
         backgroundMusic.volume = 0.10f;
+        PlayMenuMusic();
+    }
+
+    public void PlayMenuMusic() {
+        if (backgroundMusic.clip != menuMusic) {
+            backgroundMusic.clip = menuMusic;
+            backgroundMusic.loop = true;
+            backgroundMusic.Play();
+        }
+    }
+    
+    public void PlayGameplayMusic() {
+        if (backgroundMusic.clip != gameplayMusic) {
+            backgroundMusic.clip = gameplayMusic;
+            backgroundMusic.loop = true;
+            backgroundMusic.Play();
+        }
     }
 
     public void StopMusic() {
-        backgroundMusic.Stop();
+        if (backgroundMusic != null) {
+            backgroundMusic.Stop();
+        }
     }
 }
