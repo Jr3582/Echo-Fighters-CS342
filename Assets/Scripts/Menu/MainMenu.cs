@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
-{
+public class MainMenu : MonoBehaviour {
     public void PlayGame() {
         SoundManager.Instance.PlaySound(SoundManager.Instance.menuButtonSound);
         Invoke(nameof(LoadCharacterSelect), 2f);

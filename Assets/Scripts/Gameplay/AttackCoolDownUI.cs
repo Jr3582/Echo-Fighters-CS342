@@ -8,7 +8,8 @@ public class AttackCoolDownUI : MonoBehaviour {
 
     void Update() {
         if (cooldownTimeRemaining > 0) {
-            cooldownTimeRemaining -= Time.deltaTime;
+            Debug.Log(Time.timeScale);
+            cooldownTimeRemaining = Mathf.Max(cooldownTimeRemaining - Time.deltaTime, 0);
             UpdateCooldownBar();
         }
     }
@@ -20,6 +21,7 @@ public class AttackCoolDownUI : MonoBehaviour {
     private void UpdateCooldownBar() {
         if (cooldownBar != null) {
             cooldownBar.fillAmount = cooldownTimeRemaining / heavyAttackCooldown;
+            Debug.Log($"Cooldown Remaining: {cooldownTimeRemaining:F2} | Fill Amount: {cooldownBar.fillAmount:F2}");
         }
     }
 }

@@ -80,16 +80,24 @@ public class Player2 : Player {
             float healthPercentage = (float)currentHealth / maxHealth;
             player2HealthBar.fillAmount = healthPercentage;
             HasBeenHit();
+            ApplyKnockback(player1.transform.position, 300f);
         } else if (isBlocking) {
             currentHealth -= (int)(damage * DamageReduction);
             float healthPercentage = (float)currentHealth / maxHealth;
             player2HealthBar.fillAmount = healthPercentage;
             HasBeenHit();
+            ApplyKnockback(player1.transform.position, 100f);
         }
         if (currentHealth <= 0) {
             lives -= 1;
             Die();
         }
+    }
+    private void ApplyKnockback(Vector3 attackerPosition, float knockbackForce) {
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        if (rb == null) return;
+        Vector2 knockbackDirection = (transform.position - attackerPosition).normalized;
+        rb.AddForce(knockbackDirection * knockbackForce);
     }
 
     protected override KeyCode GetAttackKey() {

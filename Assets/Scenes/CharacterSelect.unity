@@ -10813,7 +10813,7 @@ MonoBehaviour:
   - {fileID: 4723107735738678597, guid: 7ed83d6a022744c5788ade26f83dfca8, type: 3}
   - {fileID: 4723107735738678597, guid: f374107ba66790641b6b7c9d0d9a49d3, type: 3}
   - {fileID: 21300000, guid: 4bb01ec2cc27d444c970f39da889c489, type: 3}
-  - {fileID: 21300000, guid: dfec5997bbc2e4517b0fa90c252f6ada, type: 3}
+  - {fileID: 21300000, guid: 264091dc19ab04f77acf1f44bc4a06e3, type: 3}
   player1Prefabs:
   - {fileID: 7968812623723485324, guid: 6b65badd655f441348459193440e4c0c, type: 3}
   - {fileID: 8731130916648207349, guid: 66954d2853df24078b38a4fe5b653e95, type: 3}
@@ -10837,7 +10837,7 @@ MonoBehaviour:
   - {fileID: 4723107735738678597, guid: 7ed83d6a022744c5788ade26f83dfca8, type: 3}
   - {fileID: 4723107735738678597, guid: f374107ba66790641b6b7c9d0d9a49d3, type: 3}
   - {fileID: 21300000, guid: 4bb01ec2cc27d444c970f39da889c489, type: 3}
-  - {fileID: 21300000, guid: dfec5997bbc2e4517b0fa90c252f6ada, type: 3}
+  - {fileID: 21300000, guid: 264091dc19ab04f77acf1f44bc4a06e3, type: 3}
   player2Prefabs:
   - {fileID: 7968812623723485324, guid: c5e6cf93478c44e26b8408a3612aadbb, type: 3}
   - {fileID: 8731130916648207349, guid: dac8d63fe0f2044848a249ee833b2779, type: 3}
