@@ -12797,48 +12797,56 @@ MonoBehaviour:
   - {fileID: 140540456}
   - {fileID: 563947635}
   - {fileID: 327543861}
+  - {fileID: 907103512}
   player1Characters:
   - {fileID: 1475522235}
   - {fileID: 1893116647}
   - {fileID: 644395011}
   - {fileID: 1112808474}
   - {fileID: 1745477983}
+  - {fileID: 685169145}
   player1Prefabs:
   - {fileID: 7968812623723485324, guid: 6b65badd655f441348459193440e4c0c, type: 3}
   - {fileID: 8731130916648207349, guid: 66954d2853df24078b38a4fe5b653e95, type: 3}
   - {fileID: 4123331507218932102, guid: c791cc4caf00d4513834a74d665d293a, type: 3}
   - {fileID: 3422386981323443372, guid: 7a63125d3c0514c57ab2355aa57d19be, type: 3}
   - {fileID: 4342326856082115900, guid: 38a351bb02c2a4192b3ace18f732b88b, type: 3}
+  - {fileID: 4235320922466130867, guid: b8aa5c376884c42218d9407d3e282491, type: 3}
   player1Descriptions:
   - {fileID: 849268534}
   - {fileID: 1740078231}
   - {fileID: 1593078179}
   - {fileID: 829513133}
   - {fileID: 778136118}
+  - {fileID: 531895870}
   player2Name:
   - {fileID: 1802539012}
   - {fileID: 1342534210}
   - {fileID: 1072316462}
   - {fileID: 1371558106}
   - {fileID: 1956414426}
+  - {fileID: 1584443405}
   player2Characters:
   - {fileID: 754517039}
   - {fileID: 1720295363}
   - {fileID: 1043242597}
   - {fileID: 1671282313}
   - {fileID: 2069245328}
+  - {fileID: 1927335958}
   player2Prefabs:
   - {fileID: 7968812623723485324, guid: c5e6cf93478c44e26b8408a3612aadbb, type: 3}
   - {fileID: 8731130916648207349, guid: dac8d63fe0f2044848a249ee833b2779, type: 3}
   - {fileID: 2069906965250969477, guid: 1dbd46117aec54b2fb2fb0e68a257349, type: 3}
   - {fileID: 5993490252095692115, guid: 2c35b32ea6e6d4459be1360c4b4b9442, type: 3}
   - {fileID: 8278285220956457123, guid: 24ee83965a16a4c6a87f22c64127e663, type: 3}
+  - {fileID: 5408970170583323324, guid: e20821048f2df4055ba4140b5475109f, type: 3}
   player2Descriptions:
   - {fileID: 1986294532}
   - {fileID: 1805274134}
   - {fileID: 32358624}
   - {fileID: 509713269}
   - {fileID: 384510211}
+  - {fileID: 1433511674}
   player1SelectedPrefab: {fileID: 0}
   player2SelectedPrefab: {fileID: 0}
 --- !u!4 &1254305644

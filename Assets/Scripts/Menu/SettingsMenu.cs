@@ -43,4 +43,7 @@ public class SettingsMenu : MonoBehaviour
     public void LoadMainMenu() {
         SceneManager.LoadScene("MainMenu");
     }
+    public void LoadControlsMenu() {
+        SceneManager.LoadScene("Controls");
+    }
 }
