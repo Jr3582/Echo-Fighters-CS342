@@ -100,13 +100,13 @@ public class Player2 : Player {
     }
 
     protected override KeyCode GetAttackKey() {
-        return KeyCode.B;
-    }
-    protected override KeyCode GetHeavyAttackKey() {
         return KeyCode.M;
     }
-        protected override KeyCode GetBlockKey() {
-        return KeyCode.N;
+    protected override KeyCode GetHeavyAttackKey() {
+        return KeyCode.Period;
+    }
+    protected override KeyCode GetBlockKey() {
+        return KeyCode.Comma;
     }
     private void TriggerAttack() {
         animator.SetBool("IsAttacking", true);

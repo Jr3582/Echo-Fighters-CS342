@@ -88,13 +88,13 @@ public class Player1 : Player {
     }
 
     protected override KeyCode GetAttackKey() {
-        return KeyCode.F;
+        return KeyCode.R;
     }
     protected override KeyCode GetHeavyAttackKey() {
-        return KeyCode.H;
+        return KeyCode.Y;
     }
     protected override KeyCode GetBlockKey() {
-        return KeyCode.G;
+        return KeyCode.T;
     }
 
     private void TriggerAttack() {
