@@ -12,4 +12,7 @@ public class GameOverScript : MonoBehaviour
         }
         SceneManager.LoadScene("CharacterSelect");
     }
+    public void BackToMapSelect() {
+        SceneManager.LoadScene("MapSelect");
+    }
 }

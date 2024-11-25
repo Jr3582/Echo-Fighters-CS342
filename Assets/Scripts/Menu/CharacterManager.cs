@@ -7,9 +7,6 @@ using UnityEngine.UI;
 public class CharacterManager : MonoBehaviour {
     public static CharacterManager Instance;
 
-    public SpriteRenderer player1SpriteRenderer;
-    public SpriteRenderer player2SpriteRenderer;
-
     public List<GameObject> player1Name = new List<GameObject>();
     public List<GameObject> player1Characters = new List<GameObject>();
     public List<GameObject> player1Prefabs;
@@ -66,10 +63,6 @@ public class CharacterManager : MonoBehaviour {
     }
 
     private void UpdatePlayer1Selection() {
-        // if (player1SpriteRenderer != null) {
-        //     player1SpriteRenderer.sprite = player1Characters[player1SelectedCharacter];
-        // }
-
         player1SelectedPrefab = player1Prefabs[player1SelectedCharacter];
         
         foreach (GameObject name in player1Name) name.SetActive(false);
@@ -95,10 +88,6 @@ public class CharacterManager : MonoBehaviour {
     }
 
     private void UpdatePlayer2Selection() {
-        // if (player2SpriteRenderer != null) {
-        //     player2SpriteRenderer.sprite = player2Characters[player2SelectedCharacter];
-        // }
-
         player2SelectedPrefab = player2Prefabs[player2SelectedCharacter];
         
         foreach (GameObject name in player2Name) name.SetActive(false);
