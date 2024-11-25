@@ -11,12 +11,12 @@ public class CharacterManager : MonoBehaviour {
     public SpriteRenderer player2SpriteRenderer;
 
     public List<GameObject> player1Name = new List<GameObject>();
-    public List<Sprite> player1Characters = new List<Sprite>();
+    public List<GameObject> player1Characters = new List<GameObject>();
     public List<GameObject> player1Prefabs;
     public List<GameObject> player1Descriptions = new List<GameObject>();
 
     public List<GameObject> player2Name = new List<GameObject>();
-    public List<Sprite> player2Characters = new List<Sprite>();
+    public List<GameObject> player2Characters = new List<GameObject>();
     public List<GameObject> player2Prefabs;
     public List<GameObject> player2Descriptions = new List<GameObject>();
 
@@ -66,34 +66,58 @@ public class CharacterManager : MonoBehaviour {
     }
 
     private void UpdatePlayer1Selection() {
-        if (player1SpriteRenderer != null) {
-            player1SpriteRenderer.sprite = player1Characters[player1SelectedCharacter];
-        }
+        // if (player1SpriteRenderer != null) {
+        //     player1SpriteRenderer.sprite = player1Characters[player1SelectedCharacter];
+        // }
 
         player1SelectedPrefab = player1Prefabs[player1SelectedCharacter];
         
         foreach (GameObject name in player1Name) name.SetActive(false);
         foreach (GameObject description in player1Descriptions) description.SetActive(false);
+        foreach (GameObject character in player1Characters) character.SetActive(false);
         
         if (player1Name.Count > player1SelectedCharacter)
             player1Name[player1SelectedCharacter].SetActive(true);
+
+        if (player1Characters.Count > player1SelectedCharacter) {
+            GameObject selectedCharacter = player1Characters[player1SelectedCharacter];
+            selectedCharacter.SetActive(true);
+
+            Animator animator = selectedCharacter.GetComponent<Animator>();
+            if (animator != null) {
+                animator.Rebind();
+                animator.Play("Idle");
+            }
+        }
         
         if (player1Descriptions.Count > player1SelectedCharacter)
             player1Descriptions[player1SelectedCharacter].SetActive(true);
     }
 
     private void UpdatePlayer2Selection() {
-        if (player2SpriteRenderer != null) {
-            player2SpriteRenderer.sprite = player2Characters[player2SelectedCharacter];
-        }
+        // if (player2SpriteRenderer != null) {
+        //     player2SpriteRenderer.sprite = player2Characters[player2SelectedCharacter];
+        // }
 
         player2SelectedPrefab = player2Prefabs[player2SelectedCharacter];
         
         foreach (GameObject name in player2Name) name.SetActive(false);
         foreach (GameObject description in player2Descriptions) description.SetActive(false);
+        foreach (GameObject character in player2Characters) character.SetActive(false);
         
         if (player2Name.Count > player2SelectedCharacter)
             player2Name[player2SelectedCharacter].SetActive(true);
+
+        if (player2Characters.Count > player2SelectedCharacter) {
+            GameObject selectedCharacter = player2Characters[player2SelectedCharacter];
+            selectedCharacter.SetActive(true);
+
+            Animator animator = selectedCharacter.GetComponent<Animator>();
+            if (animator != null) {
+                animator.Rebind();
+                animator.Play("Idle");
+            }
+        }
         
         if (player2Descriptions.Count > player2SelectedCharacter)
             player2Descriptions[player2SelectedCharacter].SetActive(true);

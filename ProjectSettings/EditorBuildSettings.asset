@@ -21,14 +21,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Settings.unity
     guid: 7d25ceac221eb4be3ac45c16dac26c37
   - enabled: 1
-    path: Assets/Scenes/WarpedCity.unity
+    path: Assets/Scenes/GameplayWarpedCity.unity
     guid: e6db08a61ec424445aebaf322860f727
   - enabled: 1
-    path: Assets/Scenes/CyberAlley.unity
+    path: Assets/Scenes/GameplayCyberAlley.unity
     guid: fb4133a2c39174a7d9d47995755b2121
   - enabled: 1
-    path: Assets/Scenes/FrenzyForest.unity
+    path: Assets/Scenes/GameplayFrenzyForest.unity
     guid: dc814a5af5f86495686d57498fc3e526
+  - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: c9f7683738176416f85784d848d19978
   - enabled: 1
     path: Assets/Scenes/Untitled.unity
     guid: 2cda990e2423bbf4892e6590ba056729

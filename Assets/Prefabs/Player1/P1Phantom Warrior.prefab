@@ -379,8 +379,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   animator: {fileID: 4203475745411670953}
-  maxHealth: 100
-  currentHealth: 100
+  maxHealth: 1
+  currentHealth: 1
   HeavyAttackDamage: 16
   NormalAttackDamage: 8
   NormalAttackCooldown: 0.5

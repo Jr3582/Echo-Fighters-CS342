@@ -21,7 +21,7 @@ public class AttackCoolDownUI : MonoBehaviour {
     private void UpdateCooldownBar() {
         if (cooldownBar != null) {
             cooldownBar.fillAmount = cooldownTimeRemaining / heavyAttackCooldown;
-            Debug.Log($"Cooldown Remaining: {cooldownTimeRemaining:F2} | Fill Amount: {cooldownBar.fillAmount:F2}");
+            // Debug.Log($"Cooldown Remaining: {cooldownTimeRemaining:F2} | Fill Amount: {cooldownBar.fillAmount:F2}");
         }
     }
 }

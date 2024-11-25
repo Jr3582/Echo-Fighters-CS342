@@ -10,11 +10,13 @@ public class RoundScript : MonoBehaviour {
     public TextMeshProUGUI roundText1;
     public TextMeshProUGUI roundText2;
     public TextMeshProUGUI countdownText;
+    public TextMeshProUGUI gameOverText;
     private int countdown = 3;
-    private int roundNumber = 1;
+    private int roundNumber = 0;
     void Start() {
         roundText2.gameObject.SetActive(false);
         countdownText.gameObject.SetActive(false);
+        gameOverText.gameObject.SetActive(false);
     }
     public void StartNewRound() {
         roundNumber++;
@@ -50,6 +52,10 @@ public class RoundScript : MonoBehaviour {
         countdownText.text = "3";
 
         Time.timeScale = 1;
+    }
+
+    public void GameIsOverText() {
+        gameOverText.gameObject.SetActive(true);
     }
 
     void Update() {

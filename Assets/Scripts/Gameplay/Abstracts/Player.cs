@@ -3,6 +3,7 @@ using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public abstract class Player : Character {
     [SerializeField] protected int maxHealth = 100;
@@ -30,6 +31,10 @@ public abstract class Player : Character {
         startingPosition = transform.position;
         roundScript = FindObjectOfType<RoundScript>();
         timer = FindObjectOfType<CountdownTimer>();
+    }
+    protected override void Start() {
+        base.Start();
+        roundScript.StartNewRound();
     }
 
     protected override void Update() {
@@ -84,8 +89,8 @@ public abstract class Player : Character {
         //Abstract;
     }
 
-    protected void Die() {
-        if (lives >= -1) {
+    protected IEnumerator Die() {
+        if (lives > -1) {
             animator.SetTrigger("IsDead");
             if (lives == 1) {
                 life1.SetActive(false);
@@ -93,12 +98,17 @@ public abstract class Player : Character {
                 life2.SetActive(false);
             } 
         } else {
+            animator.SetTrigger("IsDead");
+            yield return new WaitForSecondsRealtime(6);
+            roundScript.GameIsOverText();
+            yield return new WaitForSecondsRealtime(2);
             GameOver();
         }
+
     }
 
     private void GameOver() {
-        Debug.Log("Game is over");
+        SceneManager.LoadScene("GameOverScene");
     }
 
     public void FreezeOnLastFrame() {

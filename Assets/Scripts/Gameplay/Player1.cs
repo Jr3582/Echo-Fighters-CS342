@@ -73,7 +73,8 @@ public class Player1 : Player {
         }
         if (currentHealth <= 0) {
             lives -= 1;
-            Die();
+            Debug.Log(lives);
+            StartCoroutine(Die());
         }
     }
     private void ApplyKnockback(Vector3 attackerPosition, float knockbackForce) {

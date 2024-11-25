@@ -9,7 +9,6 @@ public class Player2 : Player {
     protected override Image HealthBar => player2HealthBar;
 
     protected override void Start() {
-        base.Start();
         player2AttackCoolDownUI.StartHeavyAttackCooldown();
         player1 = FindObjectOfType<Player1>();
         maxHealth = currentHealth;
@@ -90,7 +89,7 @@ public class Player2 : Player {
         }
         if (currentHealth <= 0) {
             lives -= 1;
-            Die();
+            StartCoroutine(Die());
         }
     }
     private void ApplyKnockback(Vector3 attackerPosition, float knockbackForce) {
