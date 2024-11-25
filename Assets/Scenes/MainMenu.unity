@@ -1723,6 +1723,7 @@ MonoBehaviour:
   particlePrefab: {fileID: 7504160728250644987, guid: d36b13d38eb904e8f96e06c198283573, type: 3}
   particleDuration: 4
   nextScene: CharacterSelect
+  particleCooldown: 6
 --- !u!4 &1281999754
 Transform:
   m_ObjectHideFlags: 0
