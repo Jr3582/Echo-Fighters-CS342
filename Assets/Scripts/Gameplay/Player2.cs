@@ -49,12 +49,14 @@ public class Player2 : Player {
 
         if (Input.GetKeyDown(GetAttackKey())) {
             if (currentTime - lastNormalAttackTime >= NormalAttackCooldown) {
+                ResetAttack()
                 TriggerAttack();
                 lastNormalAttackTime = currentTime;
                 CheckForDamage(NormalAttackDamage);
             }
         } else if (Input.GetKeyDown(GetHeavyAttackKey())) {
             if (currentTime - lastHeavyAttackTime >= HeavyAttackCooldown) {
+                ResetHeavyAttack()
                 TriggerHeavyAttack();
                 lastHeavyAttackTime = currentTime;
                 CheckForDamage(HeavyAttackDamage);

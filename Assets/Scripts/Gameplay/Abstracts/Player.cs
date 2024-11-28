@@ -108,6 +108,7 @@ public abstract class Player : Character {
     }
 
     private void GameOver() {
+        Time.timeScale = 1;
         SceneManager.LoadScene("GameOverScene");
     }
 

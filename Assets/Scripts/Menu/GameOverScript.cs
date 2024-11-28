@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class GameOverScript : MonoBehaviour
 {
+    public void Update() {
+        Debug.Log("Current Time Scale: " + Time.timeScale);
+    }
     public void BackToCharacterSelect() {
         if (CharacterManager.Instance != null) {
             Destroy(CharacterManager.Instance.gameObject);
