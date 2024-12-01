@@ -3757,7 +3757,10 @@ MonoBehaviour:
 
     -Weak Defense
 
-    -Is Invisible
+    -Mostly Invisible
+
+    -Has
+    A transformation
 
     -Bing-chilling'
   m_isRightToLeft: 0
@@ -4137,7 +4140,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1900131067}
   m_Layer: 0
-  m_Name: TheRockObjects
+  m_Name: TRObjects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4219,9 +4222,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: '-Basically No Speed
 
-    -Really Weak Attack
+    -Above Average Attack
 
-    -Super Strong Defense'
+    -Super Strong Defense
+
+    -A.O.E.
+    Attack
+
+    -Can''t Block
+
+    -Can cook'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e45d0ee1684a94697838d420e40fa76d, type: 2}
   m_sharedMaterial: {fileID: 5116279443237634427, guid: e45d0ee1684a94697838d420e40fa76d, type: 2}
@@ -4787,7 +4797,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2110421956}
   m_Layer: 0
-  m_Name: JawnSeenaObjects
+  m_Name: JSObjects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
