@@ -328,6 +328,12 @@ MonoBehaviour:
   attackCollider: {fileID: 5630362254347073969}
   player1AttackCoolDownUI: {fileID: 0}
   player1HealthBar: {fileID: 0}
+  oldAnimationController: {fileID: 9100000, guid: fcd7901ab54dc44b2a3195039964bc33, type: 2}
+  newAnimationController: {fileID: 0}
+  spriteRenderer: {fileID: 7432469764060040044}
+  oldSprite: {fileID: 4723107735738678597, guid: f374107ba66790641b6b7c9d0d9a49d3, type: 3}
+  newSprite: {fileID: 0}
+  prefabName: P1SaveyDuelist
 --- !u!1 &6347457092658554347
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,7 +360,7 @@ Transform:
   m_GameObject: {fileID: 6347457092658554347}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.396, y: 0.036, z: -1}
+  m_LocalPosition: {x: 0.392, y: 0.036, z: -1}
   m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []

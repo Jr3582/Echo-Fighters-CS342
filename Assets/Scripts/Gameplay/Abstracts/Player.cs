@@ -76,7 +76,7 @@ public abstract class Player : Character {
             rb.velocity = new Vector2(newSpeed, rb.velocity.y);
 
             Vector3 newPosition = transform.position + new Vector3(newSpeed * Time.deltaTime, 0, 0);
-            newPosition.x = Mathf.Clamp(newPosition.x, minX, maxX); // Clamp position
+            newPosition.x = Mathf.Clamp(newPosition.x, minX, maxX);
             transform.position = newPosition;
 
             Vector3 currentScale = transform.localScale;

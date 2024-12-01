@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 2584651247246373108}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.47999993, y: 0.049999982, z: -1}
+  m_LocalPosition: {x: 0.513, y: 0.049999982, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -318,6 +318,12 @@ MonoBehaviour:
   attackCollider: {fileID: 4643663522500061172}
   player1AttackCoolDownUI: {fileID: 0}
   player1HealthBar: {fileID: 0}
+  oldAnimationController: {fileID: 9100000, guid: 5ad720ca374414fb0838ca639fddea82, type: 2}
+  newAnimationController: {fileID: 9100000, guid: 22e95042095be424582a4771f67ff6fa, type: 2}
+  spriteRenderer: {fileID: 2713250415728807749}
+  oldSprite: {fileID: 21300000, guid: dfec5997bbc2e4517b0fa90c252f6ada, type: 3}
+  newSprite: {fileID: -576468652, guid: 58cd1c95e709dfa4989cf4508013505f, type: 3}
+  prefabName: P1JawnSeena
 --- !u!1 &8768120145142433547
 GameObject:
   m_ObjectHideFlags: 0

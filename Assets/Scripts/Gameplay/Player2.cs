@@ -1,21 +1,48 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class Player2 : Player {
     private Player1 player1;
     public CircleCollider2D attackCollider;
     [SerializeField] public AttackCoolDownUI player2AttackCoolDownUI;
     [SerializeField] public Image player2HealthBar;
+    public RuntimeAnimatorController oldAnimationController;
+    public RuntimeAnimatorController newAnimationController;
+    public SpriteRenderer spriteRenderer;
+    public Sprite oldSprite;
+    public Sprite newSprite;
+    public string prefabName;
     protected override Image HealthBar => player2HealthBar;
 
     protected override void Start() {
         player2AttackCoolDownUI.StartHeavyAttackCooldown();
         player1 = FindObjectOfType<Player1>();
         maxHealth = currentHealth;
+        StartCoroutine(CheckHealthPeriodically());
     }
     protected override void Update() {
         base.Update();
         HandleAttack();
+    }
+
+    private IEnumerator CheckHealthPeriodically() {
+        while(true) {
+            if (prefabName == "P2JawnSeena" && ((float)currentHealth / maxHealth) < 0.50f) {
+                spriteRenderer.sprite = newSprite;
+                animator.runtimeAnimatorController = newAnimationController;
+                groundSpeed = 10.0f;
+                jumpSpeed = 5.0f;
+                NormalAttackDamage = 15;
+            } else if(prefabName == "P2JawnSeena" && ((float)currentHealth / maxHealth) >= 0.50f) {
+                spriteRenderer.sprite = oldSprite;
+                animator.runtimeAnimatorController = oldAnimationController;
+                groundSpeed = 5.0f;
+                jumpSpeed = 4.0f;
+                NormalAttackDamage = 10;
+            }
+            yield return new WaitForSeconds(1f);
+        }
     }
 
     protected override float GetHorizontalInput() {
@@ -35,7 +62,7 @@ public class Player2 : Player {
             rb.velocity = new Vector2(newSpeed, rb.velocity.y);
 
             Vector3 newPosition = transform.position + new Vector3(newSpeed * Time.deltaTime, 0, 0);
-            newPosition.x = Mathf.Clamp(newPosition.x, minX, maxX); // Clamp position
+            newPosition.x = Mathf.Clamp(newPosition.x, minX, maxX);
             transform.position = newPosition;
 
             Vector3 currentScale = transform.localScale;

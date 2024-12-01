@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 655466854752672135}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.62, y: -0.7857145, z: -1}
+  m_LocalPosition: {x: -1.21, y: -0.7857145, z: -1}
   m_LocalScale: {x: 7.1428566, y: 7.1428566, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -144,7 +144,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 83794253
-  m_SortingLayer: 1
+  m_SortingLayer: 8
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 901639f1dddd7b04aa3c943786d274d5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -241,6 +241,12 @@ MonoBehaviour:
   attackCollider: {fileID: 6484367384941902878}
   player2AttackCoolDownUI: {fileID: 0}
   player2HealthBar: {fileID: 0}
+  oldAnimationController: {fileID: 0}
+  newAnimationController: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  oldSprite: {fileID: 0}
+  newSprite: {fileID: 0}
+  prefabName: P2PollyThePenguin
 --- !u!1 &8183543067437816279
 GameObject:
   m_ObjectHideFlags: 0

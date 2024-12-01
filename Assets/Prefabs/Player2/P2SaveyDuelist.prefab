@@ -174,6 +174,12 @@ MonoBehaviour:
   attackCollider: {fileID: 168492314850592354}
   player2AttackCoolDownUI: {fileID: 0}
   player2HealthBar: {fileID: 0}
+  oldAnimationController: {fileID: 0}
+  newAnimationController: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  oldSprite: {fileID: 0}
+  newSprite: {fileID: 0}
+  prefabName: P2SaveyDuelist
 --- !u!1 &5085012916896146237
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +206,7 @@ Transform:
   m_GameObject: {fileID: 5085012916896146237}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.264, y: 0.036, z: -1}
+  m_LocalPosition: {x: -0.295, y: 0.036, z: -1}
   m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []

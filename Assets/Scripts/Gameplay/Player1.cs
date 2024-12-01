@@ -1,23 +1,48 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class Player1 : Player {
     private Player2 player2;
     public CircleCollider2D attackCollider;
     [SerializeField] public AttackCoolDownUI player1AttackCoolDownUI;
     [SerializeField] public Image player1HealthBar;
-
+    public RuntimeAnimatorController oldAnimationController;
+    public RuntimeAnimatorController newAnimationController;
+    public SpriteRenderer spriteRenderer;
+    public Sprite oldSprite;
+    public Sprite newSprite;
+    public string prefabName;
     protected override Image HealthBar => player1HealthBar;
     protected override void Start() {
         base.Start();
         player1AttackCoolDownUI.StartHeavyAttackCooldown();
         player2 = FindObjectOfType<Player2>();
         maxHealth = currentHealth;
+        StartCoroutine(CheckHealthPeriodically());
     }
     protected override void Update() {
         base.Update();
         HandleAttack();
+    }
+    private IEnumerator CheckHealthPeriodically() {
+        while(true) {
+            if (prefabName == "P1JawnSeena" && ((float)currentHealth / maxHealth) < 0.50f) {
+                spriteRenderer.sprite = newSprite;
+                animator.runtimeAnimatorController = newAnimationController;
+                groundSpeed = 10.0f;
+                jumpSpeed = 5.0f;
+                NormalAttackDamage = 15;
+            } else if(prefabName == "P1JawnSeena" && ((float)currentHealth / maxHealth) >= 0.50f) {
+                spriteRenderer.sprite = oldSprite;
+                animator.runtimeAnimatorController = oldAnimationController;
+                groundSpeed = 5.0f;
+                jumpSpeed = 4.0f;
+                NormalAttackDamage = 10;
+            }
+            yield return new WaitForSeconds(1f);
+        }
     }
 
     protected override float GetHorizontalInput() {

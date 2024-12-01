@@ -180,7 +180,7 @@ Transform:
   m_GameObject: {fileID: 5706977337057326096}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.499, y: 0.126, z: 0}
+  m_LocalPosition: {x: 0.565, y: 0.126, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -326,7 +326,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.35
+  m_GravityScale: 0.7
   m_Material: {fileID: 6200000, guid: 8bb6f0f5b64814fda98f0b4e19bf82da, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -379,8 +379,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   animator: {fileID: 4203475745411670953}
-  maxHealth: 1
-  currentHealth: 1
+  maxHealth: 100
+  currentHealth: 100
   HeavyAttackDamage: 16
   NormalAttackDamage: 8
   NormalAttackCooldown: 0.5
@@ -395,3 +395,9 @@ MonoBehaviour:
   attackCollider: {fileID: 3747638761632713277}
   player1AttackCoolDownUI: {fileID: 0}
   player1HealthBar: {fileID: 0}
+  oldAnimationController: {fileID: 9100000, guid: e4bc03e1c446b421eb30393383143c8e, type: 2}
+  newAnimationController: {fileID: 0}
+  spriteRenderer: {fileID: 98452722119738661}
+  oldSprite: {fileID: 4723107735738678597, guid: 0bd97e23f8b532a4f8969605a3b00a4e, type: 3}
+  newSprite: {fileID: 0}
+  prefabName: P1PhantomHero

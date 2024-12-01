@@ -103,7 +103,7 @@ Transform:
   m_GameObject: {fileID: 2565973315815472831}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.243, y: 0.049999982, z: -1}
+  m_LocalPosition: {x: -0.268, y: 0.049999982, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 28584632386058148}
   m_Layer: 8
   m_Name: PlayerCollider
-  m_TagString: Player1
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -236,7 +236,7 @@ GameObject:
   - component: {fileID: 2607504897162420975}
   m_Layer: 0
   m_Name: P2JawnSena
-  m_TagString: Player1
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -395,3 +395,9 @@ MonoBehaviour:
   attackCollider: {fileID: 3039645831496160315}
   player2AttackCoolDownUI: {fileID: 0}
   player2HealthBar: {fileID: 0}
+  oldAnimationController: {fileID: 9100000, guid: 5ad720ca374414fb0838ca639fddea82, type: 2}
+  newAnimationController: {fileID: 9100000, guid: 22e95042095be424582a4771f67ff6fa, type: 2}
+  spriteRenderer: {fileID: 4774636445554446007}
+  oldSprite: {fileID: 21300000, guid: dfec5997bbc2e4517b0fa90c252f6ada, type: 3}
+  newSprite: {fileID: -576468652, guid: 58cd1c95e709dfa4989cf4508013505f, type: 3}
+  prefabName: P2JawnSeena

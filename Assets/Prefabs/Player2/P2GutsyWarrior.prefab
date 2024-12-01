@@ -180,7 +180,7 @@ Transform:
   m_GameObject: {fileID: 8526517444562807473}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.38, y: -0.09, z: 0}
+  m_LocalPosition: {x: -0.469, y: -0.09, z: 0}
   m_LocalScale: {x: 1.4285713, y: 1.4285711, z: 1.6666667}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 910875128190967419}
   - component: {fileID: 994770779089703751}
   m_Layer: 8
-  m_Name: P2Gutsy Warrior
+  m_Name: P2GutsyWarrior
   m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -298,7 +298,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 83794253
-  m_SortingLayer: 1
+  m_SortingLayer: 8
   m_SortingOrder: 2
   m_Sprite: {fileID: 4723107735738678597, guid: 77ba605bbd83f4448bc8683510c3155e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -395,3 +395,9 @@ MonoBehaviour:
   attackCollider: {fileID: 8636760545872384092}
   player2AttackCoolDownUI: {fileID: 0}
   player2HealthBar: {fileID: 0}
+  oldAnimationController: {fileID: 0}
+  newAnimationController: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  oldSprite: {fileID: 0}
+  newSprite: {fileID: 0}
+  prefabName: P2GutsyWarrior
