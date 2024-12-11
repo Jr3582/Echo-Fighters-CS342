@@ -1,0 +1,3383 @@
+fileFormatVersion: 2
+guid: 74647ee59b0684d17903925cc33ef99e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SnoopBlock_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9222
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6ceaf5e13c14229adf10e8b5a2190d
+      internalID: -154072352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 9222
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ec08a5ce2634da4823b165693647c6
+      internalID: 564598579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_2
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 9222
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647305a12b32943ff862a2e3bc4ca205
+      internalID: 577676012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_3
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 9222
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b919f9204ab146f19420b7424957525
+      internalID: 389408329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_4
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 9222
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f442028cb56145bf84bfc8609ee1157
+      internalID: 1558478052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8904
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5921dca8461aa47178365db259db76d5
+      internalID: -1745258773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_6
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 8904
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0e30b2097b6410fb90f3f9470089ee
+      internalID: 2009644563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_7
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 8904
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa157817725534e5fb74ee0892b5a765
+      internalID: -724451633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_8
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 8904
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563a3efcc732346f6b16b450c250f050
+      internalID: 237774703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_9
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 8904
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f335c987305f842008458decd525b700
+      internalID: -1958165267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8586
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05294f18b4d22410b962322dd2a25bc8
+      internalID: -1070803815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_11
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 8586
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255ace5d8bd0145a9a67be197653d9ca
+      internalID: 1108644352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_12
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 8586
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79a154b8dc5a42128a81e6672f130c8
+      internalID: -1259657746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_13
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 8586
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba8e944ae47246d6902a4314ae15686
+      internalID: -1878017687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_14
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 8586
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63653fea097e54ab0a73a46ecb970dd3
+      internalID: -617374014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8268
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74376a4d79c5b4069859cf178f73053c
+      internalID: 374686185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_16
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 8268
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5624eeff158084ef398ed9a445b44ee8
+      internalID: -1510257261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_17
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 8268
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd4df15a84374f539207f463bf05eba
+      internalID: 798647597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_18
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 8268
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ad9f7f813264bd58cb7b05b96c05e6
+      internalID: -609513538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_19
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 8268
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89d339045fe24b47807e3a0e86bac86
+      internalID: 851346029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7950
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629da68ff287c455d93d110a237a519c
+      internalID: -1346997086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_21
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 7950
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aaa667546c494d119fe90500d1bdb04
+      internalID: 1190314045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_22
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 7950
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6aa9d8283ef4bf8bf4641eafe2816b
+      internalID: 1338706717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_23
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 7950
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78eca0ec381d2400c93ebcedc8c6a33d
+      internalID: -1720995176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_24
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 7950
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8471095c8b51942ee89869729ba0e346
+      internalID: 1795830143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7632
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c0cfe5d5fe74ff4a3b78f7e82c390a
+      internalID: -248199966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_26
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 7632
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d5314a1ab7e4837ab5e446da94f261
+      internalID: 982016894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_27
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 7632
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684a673079ff84d21ab4089ca50ee8eb
+      internalID: -1747339506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_28
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 7632
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b0635eb222c4a1798dcfda8869adc3
+      internalID: 456069160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_29
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 7632
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ffdad5fe1fc5450aab65926d6e47cbd
+      internalID: 1503749497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7314
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d818d6cee7284fe69ce2de6d3a7b49c
+      internalID: 2100519893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_31
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 7314
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df00f1ab1b1843d0b210eb008bd2ac7
+      internalID: -1300354148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_32
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 7314
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf49eccbc5fda4dc3acf114215d18667
+      internalID: 15588229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_33
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 7314
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df56b4b2ba58648f3bea210c324995d4
+      internalID: 1490054918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_34
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 7314
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d25413910216444fbd8765eafae0000
+      internalID: 978346137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6996
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9880b4033db8b43b0b69ffee4fca80a0
+      internalID: 1315718834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_36
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 6996
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a60e7e8006da455ebb09f193b7adfc2
+      internalID: 1514018671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_37
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 6996
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00a59bb6e3ee49baac8baa0360c3f94
+      internalID: -1114753236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_38
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 6996
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b966a56f2d04db5817b0fcd75b70af
+      internalID: -774764961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_39
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 6996
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3f76e13bc85401b9d7e900ed9533c0
+      internalID: -1421541100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6678
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5946410de58a46bbbf0940241720793
+      internalID: 416713709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_41
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 6678
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235c6b5a5290b4cfcb770550f422bb08
+      internalID: 400961692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_42
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 6678
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d1b429ab270407780cc660ec278820
+      internalID: 1873900292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_43
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 6678
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68435bd4683804b429c9610bfbe70b0d
+      internalID: -632455603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_44
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 6678
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca00bf7432074c4093f6ef5fb816adb
+      internalID: 1080814121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6360
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e80ce48ff97ce460db229e07858fa33b
+      internalID: -1546770480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_46
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 6360
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4976f301ab9c42e681b22d0ef80e37f
+      internalID: 1027777832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_47
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 6360
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98af5d96e2764ab8903faf7c4d1a00c
+      internalID: -354898621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_48
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 6360
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980726e0c77f84bb39ce769d0d4ced7b
+      internalID: -1919270146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_49
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 6360
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b44dab5d45c642b9973911d4856a49b
+      internalID: -554272807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6042
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ecef43a8bd04143a08c8e3880ad3f1
+      internalID: 179351796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_51
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 6042
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56eaf794c89f04c3f94d26f2ac2f79ed
+      internalID: -929466476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_52
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 6042
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d6bacde2ee2944cf94e0363a34c3588
+      internalID: 280662766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_53
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 6042
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab8e88a3f5a64c5fa823fc3220f4193
+      internalID: -311486468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_54
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 6042
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2a957666b0540b2b5ce8ba1ebebd6e
+      internalID: -1274444620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5724
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d26428fb607344a88a768444993a3e2
+      internalID: 1920191808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_56
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 5724
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4114b9f34643f489da7095000c57d4ce
+      internalID: -1087409239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_57
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 5724
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242ea5d1620fb49c78735f3360c05564
+      internalID: 534264265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_58
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 5724
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f099f317d750f4a6a879f4709f9b2aed
+      internalID: -19862203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_59
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 5724
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba79d5ab6c504d9a9c5953945040e69
+      internalID: -829887235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5406
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29637bed1ade54cc0ad8ce451fd0ee27
+      internalID: 1343754194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_61
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 5406
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58df673dcb176421d83e7bf98a5be755
+      internalID: 795065452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_62
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 5406
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bbf4058e7ad148e3a6c7bda2a9c9282
+      internalID: 621891001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_63
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 5406
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c1340d679ba4ac3a8e7774cd9e3576
+      internalID: 133001131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_64
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 5406
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f5359549f4349dcbb8019dd73b0b00
+      internalID: -435295957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5088
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681da311c4fa545478a44c496d8f384f
+      internalID: -1480514001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_66
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 5088
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94851ca766c74817ad11894b7a52e5a
+      internalID: -108280036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_67
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 5088
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a58afc990efa47a9afbdd1d6d1e992d
+      internalID: 445266054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_68
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 5088
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929c1492a3e694e5a8ac39f455e9db5e
+      internalID: -1129413120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_69
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 5088
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63bffc4be1f8d4c05b93408fd543cd92
+      internalID: -570082484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4770
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a9002be8d434eb089acca670fa99aa
+      internalID: -85969642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_71
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 4770
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a43cb19aab4fe4c0897e4b64bb1d6eee
+      internalID: -385479877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_72
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 4770
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2f7a7cd8be246f889ea96714da0e81
+      internalID: 584973836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_73
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 4770
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cbfc7306b4d547a6b274e9b659ab131
+      internalID: -370507399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_74
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 4770
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb4b3704537e42d7bc17353035635fa
+      internalID: 599280161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4452
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06da062a51614fb6b0f51680492e304
+      internalID: 1086874550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_76
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 4452
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4e56ba79a0d4a5ea2a9f83f7626e77
+      internalID: 1730249968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_77
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 4452
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b24d665f3024bc08dc729c19e8d47d
+      internalID: -83356148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_78
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 4452
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94848eb230dd8443684d5f14725ac1d3
+      internalID: 2020206847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_79
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 4452
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f9cdd4d10024fa0bfd9f474c97fc9e
+      internalID: 1253246050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4134
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63dd7aafbb3e44003bf0d9d619658064
+      internalID: -148781221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_81
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 4134
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad68d9f39f18454d926f0435d374ca3
+      internalID: 787981980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_82
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 4134
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3416fc872f1114d30925c8026e62d9c6
+      internalID: 432340587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_83
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 4134
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16afea8367856428e9085e4b7b86f24e
+      internalID: 1258709370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_84
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 4134
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5eff349ee794a47a19c26305c67cf2
+      internalID: -2060195247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3816
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6143d324409074908b9347ac4539889f
+      internalID: -567490634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_86
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 3816
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06067cb809694cb2822c5883b6fa1de
+      internalID: -747452365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_87
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 3816
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f816fb0664d4fea9f824bc9dba2f13
+      internalID: 1157226885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_88
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 3816
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbfa1f365fb24fb68385995f2233f11
+      internalID: 877322697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_89
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 3816
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10acd21900036466b9e7dccd4c363166
+      internalID: -984632498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3498
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9a1519d53ce44c1b3c205b105c7872
+      internalID: -278228581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_91
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 3498
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54703eb92c8454753a2ea3e4895a05b0
+      internalID: -472262548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_92
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 3498
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: decfc2bdd30d74c3383ce7bec0ade26d
+      internalID: -1738483209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_93
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 3498
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f456b496833704369a4531fd798de848
+      internalID: 1162266313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_94
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 3498
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865c2fdbbff394733927c4c046db0445
+      internalID: 779611984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3180
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c5b71eaa16c44129d81396eed3fdc1
+      internalID: -265603867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_96
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 3180
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5e014d8686341f286779a09ea9a3a5
+      internalID: 572830449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_97
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 3180
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97c299cfd370404f93dfe84299caa78
+      internalID: 2041340588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_98
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 3180
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d474f009af44a4c8dfa0d3476030a3
+      internalID: 333156672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_99
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 3180
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a32a51f9cf45494cb1c4ca2a04253d6
+      internalID: 1414382004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2862
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5707709f6501840cea925b49de54a5c2
+      internalID: 1757592508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_101
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 2862
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea492c7df343243568429d2c390054da
+      internalID: 725671332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_102
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 2862
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6fac4bdf5da349838d590796179075c
+      internalID: -1281381611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_103
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 2862
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2dc06ad294d4356bc94009ebc51bfb
+      internalID: -562673655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_104
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 2862
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a56725d452bd4d13a4d66b95bf82c96
+      internalID: -1369024216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_105
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2544
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466059838e7894ea09dd27c7993eaa4f
+      internalID: -1591592907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_106
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 2544
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c8b42e253d604f3b8be6b11356b9dbc
+      internalID: -1365453660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_107
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 2544
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c792a4d8ac246afb33e1793ae9b5d6
+      internalID: -1051480838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_108
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 2544
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc1b2dc3331b464db9dbcbc9ef19005
+      internalID: -990372775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_109
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 2544
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b620e41a1bf4813aacbb4c88c1b198
+      internalID: -840389674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2226
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8c104f6c0e248549c10b5cf3a8550c
+      internalID: -1994237040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_111
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 2226
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d163611bab8e748b6a19af6b4c28f2c3
+      internalID: 1337439753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_112
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 2226
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee9ebe1840504849a9e6c428c8ef6a9
+      internalID: 230536938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_113
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 2226
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11018b0fd98d498e9d865349115af44
+      internalID: -256219965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_114
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 2226
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f1270b52acb4fd9b316d4fdae0069b
+      internalID: -57123502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_115
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1908
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254155196bb24483fae9a085f27b0c21
+      internalID: 1298994632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_116
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1908
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e237230b3bc244c899a761cb642b8de
+      internalID: -340204258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_117
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1908
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485b8dbf4690444269be0d2d0ec54a78
+      internalID: 1950330542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_118
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1908
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66d896bca6c84c6297b57c8fecdf267
+      internalID: 1510928399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_119
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1908
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18cf631c87c542e3a693fbed6926432
+      internalID: 1723223104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1590
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1682cfdd090c48d590333e8fd5aa472
+      internalID: -1642306163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_121
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1590
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38647e0f889224b01aa86197dde374bc
+      internalID: -2107219193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_122
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1590
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff64590b5aa94498bb45b3eb35e16fb
+      internalID: 1419673778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_123
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1590
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9481797f3a2264e37acdeb420f7e4204
+      internalID: -2120916843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_124
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1590
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9131fd9d083e44afeac16bec7d038cde
+      internalID: 840157364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_125
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1272
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9de651192da40bb9b5fc035fd6a57e
+      internalID: -459240423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_126
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1272
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 719111d429b92489789dd29974d3ccfa
+      internalID: -1834065603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_127
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1272
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61dd9dd78f6744a35bfb30639f9e98b4
+      internalID: -227870170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_128
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1272
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea6486806f8b4a8697ead0dbd751b47
+      internalID: 1285792657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_129
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1272
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b8961b38df348ee927265f3400970c
+      internalID: -1411384005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_130
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 954
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03157ba1fdb7b45d7ad35e1abbd5b312
+      internalID: -2084872113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_131
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 954
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df2aca4fa38349de9e56c78a837817f
+      internalID: -291033112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_132
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 954
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9049c6686f7914472a1a25fcdc426879
+      internalID: -1389233652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_133
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 954
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53bb23aac46794dfda714d289eb2a507
+      internalID: -65058547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_134
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 954
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f3fd3fdf7e843acac063ea13179aff
+      internalID: -1575915691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_135
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 636
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c8a6a698eb046e69d828d9469ced85
+      internalID: 951504272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_136
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 636
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b560a6066e7c94478b17ce9bed8b80c9
+      internalID: 1433484967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_137
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 636
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d5494a8cde447faa0f8e7ce0b4e099
+      internalID: -1186417091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_138
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 636
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523037536f2434f9f95aec29b84452f6
+      internalID: -1956749137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_139
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 636
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c46ee98649054443bbf910163806ed26
+      internalID: -355450124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 318
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e3807e12017e4190966e6e99e238c32
+      internalID: -1298483901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_141
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 318
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc6faa06eb1f403691f00ad53fe6ff8
+      internalID: 788405772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_142
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 318
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ae6a4cd958f4914b5bb807eac2d91b
+      internalID: -2074117074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_143
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 318
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c228ccb3271f1477fb0d3984574e1c60
+      internalID: -57678784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_144
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 318
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f77c2733b674493399beb2d8733a9e0
+      internalID: 1256567075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_145
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ef7251d2f7c4b5484eba81fc2bb299
+      internalID: -275404360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_146
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 0
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c0db5600dd640b9a15c4d024e8c3b7
+      internalID: -441019893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnoopBlock_147
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 0
+        width: 133
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc62d10930a5343519c4dc6b0ab22cd9
+      internalID: 1552864329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SnoopBlock_0: -154072352
+      SnoopBlock_1: 564598579
+      SnoopBlock_10: -1070803815
+      SnoopBlock_100: 1757592508
+      SnoopBlock_101: 725671332
+      SnoopBlock_102: -1281381611
+      SnoopBlock_103: -562673655
+      SnoopBlock_104: -1369024216
+      SnoopBlock_105: -1591592907
+      SnoopBlock_106: -1365453660
+      SnoopBlock_107: -1051480838
+      SnoopBlock_108: -990372775
+      SnoopBlock_109: -840389674
+      SnoopBlock_11: 1108644352
+      SnoopBlock_110: -1994237040
+      SnoopBlock_111: 1337439753
+      SnoopBlock_112: 230536938
+      SnoopBlock_113: -256219965
+      SnoopBlock_114: -57123502
+      SnoopBlock_115: 1298994632
+      SnoopBlock_116: -340204258
+      SnoopBlock_117: 1950330542
+      SnoopBlock_118: 1510928399
+      SnoopBlock_119: 1723223104
+      SnoopBlock_12: -1259657746
+      SnoopBlock_120: -1642306163
+      SnoopBlock_121: -2107219193
+      SnoopBlock_122: 1419673778
+      SnoopBlock_123: -2120916843
+      SnoopBlock_124: 840157364
+      SnoopBlock_125: -459240423
+      SnoopBlock_126: -1834065603
+      SnoopBlock_127: -227870170
+      SnoopBlock_128: 1285792657
+      SnoopBlock_129: -1411384005
+      SnoopBlock_13: -1878017687
+      SnoopBlock_130: -2084872113
+      SnoopBlock_131: -291033112
+      SnoopBlock_132: -1389233652
+      SnoopBlock_133: -65058547
+      SnoopBlock_134: -1575915691
+      SnoopBlock_135: 951504272
+      SnoopBlock_136: 1433484967
+      SnoopBlock_137: -1186417091
+      SnoopBlock_138: -1956749137
+      SnoopBlock_139: -355450124
+      SnoopBlock_14: -617374014
+      SnoopBlock_140: -1298483901
+      SnoopBlock_141: 788405772
+      SnoopBlock_142: -2074117074
+      SnoopBlock_143: -57678784
+      SnoopBlock_144: 1256567075
+      SnoopBlock_145: -275404360
+      SnoopBlock_146: -441019893
+      SnoopBlock_147: 1552864329
+      SnoopBlock_15: 374686185
+      SnoopBlock_16: -1510257261
+      SnoopBlock_17: 798647597
+      SnoopBlock_18: -609513538
+      SnoopBlock_19: 851346029
+      SnoopBlock_2: 577676012
+      SnoopBlock_20: -1346997086
+      SnoopBlock_21: 1190314045
+      SnoopBlock_22: 1338706717
+      SnoopBlock_23: -1720995176
+      SnoopBlock_24: 1795830143
+      SnoopBlock_25: -248199966
+      SnoopBlock_26: 982016894
+      SnoopBlock_27: -1747339506
+      SnoopBlock_28: 456069160
+      SnoopBlock_29: 1503749497
+      SnoopBlock_3: 389408329
+      SnoopBlock_30: 2100519893
+      SnoopBlock_31: -1300354148
+      SnoopBlock_32: 15588229
+      SnoopBlock_33: 1490054918
+      SnoopBlock_34: 978346137
+      SnoopBlock_35: 1315718834
+      SnoopBlock_36: 1514018671
+      SnoopBlock_37: -1114753236
+      SnoopBlock_38: -774764961
+      SnoopBlock_39: -1421541100
+      SnoopBlock_4: 1558478052
+      SnoopBlock_40: 416713709
+      SnoopBlock_41: 400961692
+      SnoopBlock_42: 1873900292
+      SnoopBlock_43: -632455603
+      SnoopBlock_44: 1080814121
+      SnoopBlock_45: -1546770480
+      SnoopBlock_46: 1027777832
+      SnoopBlock_47: -354898621
+      SnoopBlock_48: -1919270146
+      SnoopBlock_49: -554272807
+      SnoopBlock_5: -1745258773
+      SnoopBlock_50: 179351796
+      SnoopBlock_51: -929466476
+      SnoopBlock_52: 280662766
+      SnoopBlock_53: -311486468
+      SnoopBlock_54: -1274444620
+      SnoopBlock_55: 1920191808
+      SnoopBlock_56: -1087409239
+      SnoopBlock_57: 534264265
+      SnoopBlock_58: -19862203
+      SnoopBlock_59: -829887235
+      SnoopBlock_6: 2009644563
+      SnoopBlock_60: 1343754194
+      SnoopBlock_61: 795065452
+      SnoopBlock_62: 621891001
+      SnoopBlock_63: 133001131
+      SnoopBlock_64: -435295957
+      SnoopBlock_65: -1480514001
+      SnoopBlock_66: -108280036
+      SnoopBlock_67: 445266054
+      SnoopBlock_68: -1129413120
+      SnoopBlock_69: -570082484
+      SnoopBlock_7: -724451633
+      SnoopBlock_70: -85969642
+      SnoopBlock_71: -385479877
+      SnoopBlock_72: 584973836
+      SnoopBlock_73: -370507399
+      SnoopBlock_74: 599280161
+      SnoopBlock_75: 1086874550
+      SnoopBlock_76: 1730249968
+      SnoopBlock_77: -83356148
+      SnoopBlock_78: 2020206847
+      SnoopBlock_79: 1253246050
+      SnoopBlock_8: 237774703
+      SnoopBlock_80: -148781221
+      SnoopBlock_81: 787981980
+      SnoopBlock_82: 432340587
+      SnoopBlock_83: 1258709370
+      SnoopBlock_84: -2060195247
+      SnoopBlock_85: -567490634
+      SnoopBlock_86: -747452365
+      SnoopBlock_87: 1157226885
+      SnoopBlock_88: 877322697
+      SnoopBlock_89: -984632498
+      SnoopBlock_9: -1958165267
+      SnoopBlock_90: -278228581
+      SnoopBlock_91: -472262548
+      SnoopBlock_92: -1738483209
+      SnoopBlock_93: 1162266313
+      SnoopBlock_94: 779611984
+      SnoopBlock_95: -265603867
+      SnoopBlock_96: 572830449
+      SnoopBlock_97: 2041340588
+      SnoopBlock_98: 333156672
+      SnoopBlock_99: 1414382004
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
