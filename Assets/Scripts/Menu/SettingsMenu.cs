@@ -40,6 +40,11 @@ public class SettingsMenu : MonoBehaviour
         SoundManager.Instance.PlaySound(SoundManager.Instance.backButtonSound);
         Invoke(nameof(LoadMainMenu), .5f);
     }
+
+    public void GoToControlsMenu() {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.backButtonSound);
+        Invoke(nameof(LoadControlsMenu), .5f);
+    }
     public void LoadMainMenu() {
         SceneManager.LoadScene("MainMenu");
     }

@@ -6,8 +6,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public abstract class Player : Character {
-    [SerializeField] protected int maxHealth = 100;
-    [SerializeField] protected int currentHealth;
+    [SerializeField] public int maxHealth = 100;
+    [SerializeField] public int currentHealth;
     [SerializeField] protected int HeavyAttackDamage = 12;
     [SerializeField] protected int NormalAttackDamage = 8;
     [SerializeField] protected float NormalAttackCooldown = 0.5f;
@@ -23,7 +23,7 @@ public abstract class Player : Character {
     public GameObject life1;
     public GameObject life2;
     protected abstract Image HealthBar { get; }
-    private Vector3 startingPosition;
+    public Vector3 startingPosition;
     protected RoundScript roundScript;
     protected CountdownTimer timer;
     protected bool isBlocking = false;

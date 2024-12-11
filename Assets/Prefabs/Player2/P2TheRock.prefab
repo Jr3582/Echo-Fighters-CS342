@@ -227,9 +227,9 @@ MonoBehaviour:
   animator: {fileID: 2474033424101135379}
   maxHealth: 225
   currentHealth: 225
-  HeavyAttackDamage: 20
-  NormalAttackDamage: 10
-  NormalAttackCooldown: 4
+  HeavyAttackDamage: 30
+  NormalAttackDamage: 15
+  NormalAttackCooldown: 2
   HeavyAttackCooldown: 25
   DamageReduction: 1
   jumpSpeed: 2

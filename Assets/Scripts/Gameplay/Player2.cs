@@ -32,7 +32,7 @@ public class Player2 : Player {
                 spriteRenderer.sprite = newSprite;
                 animator.runtimeAnimatorController = newAnimationController;
                 groundSpeed = 10.0f;
-                jumpSpeed = 5.0f;
+                jumpSpeed = 8.0f;
                 NormalAttackDamage = 15;
             } else if(prefabName == "P2JawnSeena" && ((float)currentHealth / maxHealth) >= 0.50f) {
                 spriteRenderer.sprite = oldSprite;
@@ -74,14 +74,14 @@ public class Player2 : Player {
     protected void HandleAttack() {
         float currentTime = Time.time;
 
-        if (Input.GetKeyDown(GetAttackKey())) {
+        if (Input.GetKeyDown(GetAttackKey()) && player1.currentHealth >= 0) {
             if (currentTime - lastNormalAttackTime >= NormalAttackCooldown) {
                 ResetAttack();
                 TriggerAttack();
                 lastNormalAttackTime = currentTime;
                 CheckForDamage(NormalAttackDamage);
             }
-        } else if (Input.GetKeyDown(GetHeavyAttackKey())) {
+        } else if (Input.GetKeyDown(GetHeavyAttackKey()) && player1.currentHealth >= 0) {
             if (currentTime - lastHeavyAttackTime >= HeavyAttackCooldown) {
                 ResetHeavyAttack();
                 TriggerHeavyAttack();

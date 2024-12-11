@@ -32,7 +32,7 @@ public class Player1 : Player {
                 spriteRenderer.sprite = newSprite;
                 animator.runtimeAnimatorController = newAnimationController;
                 groundSpeed = 10.0f;
-                jumpSpeed = 5.0f;
+                jumpSpeed = 8.0f;
                 NormalAttackDamage = 15;
             } else if(prefabName == "P1JawnSeena" && ((float)currentHealth / maxHealth) >= 0.50f) {
                 spriteRenderer.sprite = oldSprite;
@@ -54,14 +54,14 @@ public class Player1 : Player {
     private void HandleAttack() {
         float currentTime = Time.time;
 
-        if (Input.GetKeyDown(GetAttackKey())) {
+        if (Input.GetKeyDown(GetAttackKey()) && player2.currentHealth >= 0) {
             if (currentTime - lastNormalAttackTime >= NormalAttackCooldown) {
                 ResetAttack();
                 TriggerAttack();
                 lastNormalAttackTime = currentTime;
                 CheckForDamage(NormalAttackDamage);
             }
-        } else if (Input.GetKeyDown(GetHeavyAttackKey())) {
+        } else if (Input.GetKeyDown(GetHeavyAttackKey()) && player2.currentHealth >= 0) {
             if (currentTime - lastHeavyAttackTime >= HeavyAttackCooldown) {
                 ResetHeavyAttack();
                 TriggerHeavyAttack();
@@ -100,7 +100,6 @@ public class Player1 : Player {
         }
         if (currentHealth <= 0) {
             lives -= 1;
-            Debug.Log(lives);
             StartCoroutine(Die());
         }
     }
@@ -145,5 +144,10 @@ public class Player1 : Player {
     }
     public void ResetToIdle() {
         animator.Play("Idle");
+    }
+
+    internal void ResetForNewRound((float, float, float) value)
+    {
+        throw new NotImplementedException();
     }
 }

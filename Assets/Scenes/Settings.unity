@@ -3105,7 +3105,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1246571644}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
-        m_MethodName: LoadControlsMenu
+        m_MethodName: GoToControlsMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
