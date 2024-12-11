@@ -171,6 +171,7 @@ MonoBehaviour:
   lives: 2
   life1: {fileID: 0}
   life2: {fileID: 0}
+  startingPosition: {x: 0, y: 0, z: 0}
   attackCollider: {fileID: 168492314850592354}
   player2AttackCoolDownUI: {fileID: 0}
   player2HealthBar: {fileID: 0}
@@ -180,6 +181,7 @@ MonoBehaviour:
   oldSprite: {fileID: 0}
   newSprite: {fileID: 0}
   prefabName: P2SaveyDuelist
+  hitSound: {fileID: 8300000, guid: 2a35172ae8d514b0cb90dc63246d94e1, type: 3}
 --- !u!1 &5085012916896146237
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,12 +15,21 @@ public class Player1 : Player {
     public Sprite newSprite;
     public string prefabName;
     protected override Image HealthBar => player1HealthBar;
+    [SerializeField] private AudioClip hitSound;
+    private AudioSource audioSource;
+
     protected override void Start() {
         base.Start();
         player1AttackCoolDownUI.StartHeavyAttackCooldown();
         player2 = FindObjectOfType<Player2>();
         maxHealth = currentHealth;
         StartCoroutine(CheckHealthPeriodically());
+
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null) {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+        audioSource.playOnAwake = false;
     }
     protected override void Update() {
         base.Update();
@@ -90,6 +99,7 @@ public class Player1 : Player {
             HasBeenHit();
 
             ApplyKnockback(player2.transform.position, 300f);
+            PlayHitSound();
         } else if (isBlocking) {
             currentHealth -= (int)(damage * DamageReduction);
             float healthPercentage = (float)currentHealth / maxHealth;
@@ -97,6 +107,7 @@ public class Player1 : Player {
             HasBeenHit();
 
             ApplyKnockback(player2.transform.position, 100f);
+            PlayHitSound();
         }
         if (currentHealth <= 0) {
             lives -= 1;
@@ -109,6 +120,13 @@ public class Player1 : Player {
         Vector2 knockbackDirection = (transform.position - attackerPosition).normalized;
         rb.AddForce(knockbackDirection * knockbackForce);
     }
+    private void PlayHitSound() {
+        if (hitSound != null && audioSource != null) {
+            audioSource.clip = hitSound;
+            audioSource.Play();
+        }
+    }
+
     protected override bool GetJumpInput() {
         return Input.GetKey(KeyCode.W);
     }

@@ -171,6 +171,7 @@ MonoBehaviour:
   lives: 2
   life1: {fileID: 0}
   life2: {fileID: 0}
+  startingPosition: {x: 0, y: 0, z: 0}
   attackCollider: {fileID: 8187396715872005340}
   player1AttackCoolDownUI: {fileID: 0}
   player1HealthBar: {fileID: 0}
@@ -180,6 +181,7 @@ MonoBehaviour:
   oldSprite: {fileID: 21300000, guid: afa7660b009c09645acfe1368b9033b8, type: 3}
   newSprite: {fileID: 0}
   prefabName: P1TheRock
+  hitSound: {fileID: 8300000, guid: 7ec542bec41324a199fed29788675043, type: 3}
 --- !u!1 &4456411580947515713
 GameObject:
   m_ObjectHideFlags: 0

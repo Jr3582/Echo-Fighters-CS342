@@ -402,3 +402,4 @@ MonoBehaviour:
   oldSprite: {fileID: 4723107735738678597, guid: 77ba605bbd83f4448bc8683510c3155e, type: 3}
   newSprite: {fileID: 0}
   prefabName: P1GutsyWarrior
+  hitSound: {fileID: 8300000, guid: 2a35172ae8d514b0cb90dc63246d94e1, type: 3}

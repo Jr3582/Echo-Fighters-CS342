@@ -402,3 +402,4 @@ MonoBehaviour:
   oldSprite: {fileID: 0}
   newSprite: {fileID: 0}
   prefabName: SnoopDogg
+  hitSound: {fileID: 8300000, guid: e0792dd5dae904d57a3ce8a3ff49729b, type: 3}
