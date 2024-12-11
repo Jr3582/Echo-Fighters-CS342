@@ -1223,6 +1223,10 @@ MonoBehaviour:
   backgroundMusic: {fileID: 809781078}
   menuMusic: {fileID: 8300000, guid: f15af3da1b45ff947a981d8d8b261821, type: 3}
   gameplayMusic: {fileID: 8300000, guid: 463f39c8c1318b74ca1428aebc68ddae, type: 3}
+  warpedCityMusic: {fileID: 8300000, guid: a9fdce8ce53864e8f9ff8d7928a0b3ce, type: 3}
+  frenzyForestMusic: {fileID: 8300000, guid: c97871b42a88d43f1a5bef2b2976b7f7, type: 3}
+  cyberAlleyMusic: {fileID: 8300000, guid: 2549a93236ce4457985764fe708b5d93, type: 3}
+  rumbleRailsMusic: {fileID: 8300000, guid: 2e30800882c5841499eedf513deddee4, type: 3}
 --- !u!4 &809781080
 Transform:
   m_ObjectHideFlags: 0

@@ -309,12 +309,13 @@ MonoBehaviour:
   NormalAttackCooldown: 1.5
   HeavyAttackCooldown: 20
   DamageReduction: 0.75
-  jumpSpeed: 4
+  jumpSpeed: 6
   groundSpeed: 5
   acceleration: 1
   lives: 2
   life1: {fileID: 0}
   life2: {fileID: 0}
+  startingPosition: {x: 0, y: 0, z: 0}
   attackCollider: {fileID: 4643663522500061172}
   player1AttackCoolDownUI: {fileID: 0}
   player1HealthBar: {fileID: 0}
